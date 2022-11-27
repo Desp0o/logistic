@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/logistic/static/css/main.9a0e4cca.css",
+    "main.js": "/logistic/static/js/main.07065dc8.js",
+    "static/media/logo.png": "/logistic/static/media/logo.18926342d53955fa8bfe.png",
+    "index.html": "/logistic/index.html",
+    "main.9a0e4cca.css.map": "/logistic/static/css/main.9a0e4cca.css.map",
+    "main.07065dc8.js.map": "/logistic/static/js/main.07065dc8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a0e4cca.css",
+    "static/js/main.07065dc8.js"
+  ]
+}
