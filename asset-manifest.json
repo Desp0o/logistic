@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/logistic/static/css/main.b97001e0.css",
-    "main.js": "/logistic/static/js/main.8be785ed.js",
+    "main.css": "/logistic/static/css/main.18d42de8.css",
+    "main.js": "/logistic/static/js/main.5cbaf68f.js",
     "static/media/slider_img.webp": "/logistic/static/media/slider_img.fa453e703d401c51b87c.webp",
+    "static/media/Roboto-Regular.ttf": "/logistic/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Poppins-Regular.ttf": "/logistic/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/section_bg02.jpg": "/logistic/static/media/section_bg02.23a0d19e6b0e85218bef.jpg",
+    "static/media/car1.jpg": "/logistic/static/media/car1.8066b5cb7ebff6fc8c25.jpg",
     "static/media/logo.png": "/logistic/static/media/logo.18926342d53955fa8bfe.png",
     "index.html": "/logistic/index.html",
-    "main.b97001e0.css.map": "/logistic/static/css/main.b97001e0.css.map",
-    "main.8be785ed.js.map": "/logistic/static/js/main.8be785ed.js.map"
+    "main.18d42de8.css.map": "/logistic/static/css/main.18d42de8.css.map",
+    "main.5cbaf68f.js.map": "/logistic/static/js/main.5cbaf68f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b97001e0.css",
-    "static/js/main.8be785ed.js"
+    "static/css/main.18d42de8.css",
+    "static/js/main.5cbaf68f.js"
   ]
 }
