@@ -1,10 +1,15 @@
-import {React, useRef} from "react";
+import {React, useRef, useState, useEffect} from "react";
+import Fade from 'react-reveal/Fade';
 import './main.css'
+
+import TextSlider from "./textSlider";
 
 import clock from './images/clock.png'
 import logo  from './images/logo.png'
 import sliderIMG from './images/slider_img.webp'
 import car1 from './images/car1.jpg'
+import xmark from './images/xmark.svg'
+import bars from './images/bars.svg'
 
 function Main() {
     const navRef = useRef()
@@ -15,7 +20,23 @@ function Main() {
           }
     });
     
+    const [burgerLogo, setBurgerLogo] = useState(bars)
+    const [isActive, setIsActive] = useState(false)
+    const [dashboard, setDashboard] = useState('dashboard')
     
+    function handleClicl(){
+        if(!isActive){
+            setBurgerLogo(xmark)
+            setIsActive(true)
+            setDashboard('dashboard dashboard_Active')
+        }else{
+            setBurgerLogo(bars)
+            setIsActive(false)
+            setDashboard('dashboard')
+        }
+    }
+
+   
 
     return(
         <div className="App">
@@ -49,15 +70,27 @@ function Main() {
                         <li className="navbar_links">contact</li>
                     </ul>
                 </div>
+
+                <div className="burger_menu" onClick={handleClicl}>
+                    <img className="burger_menu_icon" src={burgerLogo} />
+                </div>
+            </div>
+
+            <div className={dashboard}>
+                    <ul>
+                        <li className="navbar_links">home</li>
+                        <li className="navbar_links">about us</li>
+                        <li className="navbar_links">service</li>
+                        <li className="navbar_links">customers</li>
+                        <li className="navbar_links">contact</li>
+                    </ul>
             </div>
 
             {/* სლაიდერი */}
             <div className="slider">
                 <img className="sliderIMG" src={sliderIMG} />
 
-                <div className="sliderText">
-                
-                </div>
+                <TextSlider />
             </div>
 
             {/* about სექცია */}
@@ -113,7 +146,7 @@ function Main() {
 
                 <div className="service_cards_section">
 
-                    <div className="service_card">
+                    <Fade left><div className="service_card">
                         <div className="service_card_inner">
                         <svg className="service_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M48 0C21.5 0 0 21.5 0 48V368c0 26.5 21.5 48 48 48H64c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H48zM416 160h50.7L544 237.3V256H416V160zM208 416c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zm272 48c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48z"/></svg>
 
@@ -121,13 +154,13 @@ function Main() {
 
                             <p className="card_txt2">We can deliver your product at the best price. We guarantee your delivery with the best insurance company</p>
                         </div>
-                    </div>
+                    </div></Fade>
 
-                    <div className="service_card">
+                    <Fade delay={200}><div className="service_card">
                         <div className="service_card_inner">
                         <svg className="service_icons" version="1.1"  viewBox="0 0 32 32">
 
-<path  class="puchipuchi_een" d="M30.291,2.87l-9.581,25.26c-0.39,1.029-1.346,1.234-2.123,0.456c0,0-6.036-6.036-6.586-6.586
+<path  className="puchipuchi_een" d="M30.291,2.87l-9.581,25.26c-0.39,1.029-1.346,1.234-2.123,0.456c0,0-6.036-6.036-6.586-6.586
 	s-0.359-1.631,0.425-2.403l13.316-13.11c0.784-0.772,0.711-0.856-0.163-0.187L10.588,17.784c-0.873,0.669-2.224,0.58-3.002-0.198
 	l-4.172-4.172c-0.778-0.778-0.573-1.733,0.456-2.124l25.26-9.581C30.159,1.319,30.681,1.841,30.291,2.87z M8.707,20.121
 	C8.318,19.732,8,19.864,8,20.414V25c0,0.55,0.386,0.768,0.857,0.485l2.401-1.441c0.472-0.283,0.539-0.833,0.15-1.222L8.707,20.121z"
@@ -138,9 +171,9 @@ function Main() {
 
                             <p className="card_txt2">The team full of dispatchers are searching for the new loads on different platforms</p>
                         </div>
-                    </div>
+                    </div></Fade>
 
-                    <div className="service_card">
+                    <Fade right><div className="service_card">
                         <div className="service_card_inner">
                         <svg className="service_icons" version="1.1" 
 	                                            viewBox="0 0 512 512"  >
@@ -257,7 +290,7 @@ function Main() {
 
                             <p className="card_txt2">Our tracking system helps to check your loads from everywhere and everytime</p>
                         </div>
-                    </div>
+                    </div></Fade>
                 </div>
             </div>
 

@@ -16,6 +16,7 @@
     height: 50px;
     background-color: #0D2D3E;
 
+    overflow-x: hidden;
     display: flex;
     align-items: center;
 }
@@ -117,12 +118,75 @@ ul{
     text-transform: capitalize;
 }
 
+.burger_menu{
+    display: none;
+    cursor: pointer;
+}
+
+.burger_menu_icon{
+    width: 20px;
+}
+
+.dashboard{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 5;
+    top: 50px;
+    margin-top: -100% ;
+    transition: all 0.3s ease;
+}
+
+.dashboard_Active{
+    margin-top: 0;
+}
+
+.dashboard ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+    text-align: end;
+}
+
+
+@media (max-width:769px) {
+    .top_section{
+        display: none;
+    }
+    .navbar{
+        box-sizing: border-box;
+        height: 50px;
+        justify-content: space-between;
+        padding-right: 10px;
+        position: fixed;
+        z-index: 6;
+    }
+    .navbar_logo{
+        height: 50px;
+    }
+    ul{
+        display: none;
+    }
+    .burger_menu{
+        display: block;
+    }
+    .dashboard{
+        display: flex;
+    }
+}
 
 
 /******************/
 /***** SLIDER ****/
 
 .slider{
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: #EC3834;
@@ -135,7 +199,183 @@ ul{
     object-position: center;
 }
 
+.textslider{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: absolute;
+    overflow: hidden;
+    top: 30%;
+    transform: translateY(-20%);
+    left: 15%;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
 
+.actived{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+.line_smallH{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: -150%;
+    transition: all 1s ease;
+}
+
+.slider_line{
+    width: 50px;
+    height: 2px;
+    background-color: #EC3834;
+    transition: all 0.5s ease;
+}
+.slider_small_text{
+    font-size: 18px;
+    font-family: roboto;
+    text-transform: uppercase;
+    color: #EC3834;
+}
+
+.header1{
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: white;
+    margin-left: -150%;
+    transition: all 1s ease;
+}
+
+.header2{
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: white;
+    margin-left: -150%;
+    
+}
+
+.slider_btn{
+    width: 200px;
+    height: 60px;
+    background-color: #FE2144;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -150%;
+}
+
+.slider_btn::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fcfcfc;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.slider_btn:hover:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+}
+
+.slider_btn p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-family: roboto;
+    font-size: 14px;
+}
+
+.slider_btn p:before{
+    content: 'our services';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    left: 0;
+    color: rgb(5, 5, 5);
+    transition: all 0.6s ease;
+}
+
+.slider_btn:hover p:before{
+    content: 'our services';
+    position: absolute;
+    opacity: 1;
+}
+
+.animation1{
+    animation: textmove 1.2s linear 0.2s 1 forwards;
+}
+
+.animation2{
+    animation: textmove 1.2s linear 0.6s 1 forwards;
+}
+
+.animation3{
+    animation: textmove 1.2s linear 0.6s 1 forwards;
+}
+
+.animation4{
+    animation: textmove 1.2s linear 0.7s 1 forwards;
+}
+
+@keyframes textmove {
+    0%{
+        margin-left: -150%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:769px) {
+    .header1,
+    .header2{
+        font-size: 27px;
+    }
+
+    .textslider{
+        display: flex;
+        flex-direction: column;
+        left: 5%;
+        gap: 50px;
+    }
+    .slider_btn{
+        width: 150px;
+        height: 50px;
+    }
+    .slider_line{
+        width: 30px;
+        height: 2px;
+        background-color: #EC3834;
+        transition: all 0.5s ease;
+    }
+    .slider_small_text{
+        font-size: 14px;
+    }
+}
 /****************************/
 /****** WHAT WE DO **********/  
 /****************************/
@@ -395,7 +635,6 @@ ul{
     position: relative;
     width: 300px;
     height: 340px;
-    border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
     background-color: #fafafad7;
@@ -490,7 +729,6 @@ ul{
         position: relative;
         width: 250px;
         height: 290px;
-        border-radius: 10px;
         box-sizing: border-box;
         overflow: hidden;
         background-color: #fafafad7;
