@@ -44,7 +44,7 @@ function Main() {
             {/* ზედა ფიქსირებული სექცია */}
             <div className="top_section">
                 <div className="top_section_left">
-                    <img className="top_section_left_icon" src={clock} />
+                    <img className="top_section_left_icon" src={clock} alt="icon"/>
                     <p className="top_section_left_txt">MON - SUN: 24 HOURS</p>
                 </div>
 
@@ -58,7 +58,7 @@ function Main() {
             {/* ნავიგაცია */}
             <div className="navbar" ref={navRef}>
                 <div className="navbar_left">
-                    <img className="navbar_logo" src={logo} />
+                    <img className="navbar_logo" src={logo} alt="company_logo" />
                 </div>
 
                 <div className="navbar_right">
@@ -72,7 +72,7 @@ function Main() {
                 </div>
 
                 <div className="burger_menu" onClick={handleClicl}>
-                    <img className="burger_menu_icon" src={burgerLogo} />
+                    <img className="burger_menu_icon" src={burgerLogo} alt="burger_menu_icon" />
                 </div>
             </div>
 
@@ -88,7 +88,7 @@ function Main() {
 
             {/* სლაიდერი */}
             <div className="slider">
-                <img className="sliderIMG" src={sliderIMG} />
+                <img className="sliderIMG" src={sliderIMG} alt="sliderIMG"/>
 
                 <TextSlider />
             </div>
@@ -98,7 +98,7 @@ function Main() {
                 <div className="what_we_do_overlap">
 
                     <div className="what_we_do_overlap_left">
-                        <img src={car1}/>
+                        <img src={car1} alt="car"/>
                     </div>
 
                     <div className="what_we_do_overlap_right">
