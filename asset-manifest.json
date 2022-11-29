@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/logistic/static/css/main.9cfce05a.css",
-    "main.js": "/logistic/static/js/main.091f9d40.js",
+    "main.css": "/logistic/static/css/main.e54fe160.css",
+    "main.js": "/logistic/static/js/main.9e01cb7f.js",
     "static/media/slider_img.webp": "/logistic/static/media/slider_img.fa453e703d401c51b87c.webp",
     "static/media/bg1.jpg": "/logistic/static/media/bg1.df4ccfe74736e69b5d1e.jpg",
     "static/media/Roboto-Regular.ttf": "/logistic/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
@@ -19,11 +19,11 @@
     "index.html": "/logistic/index.html",
     "static/media/bars.svg": "/logistic/static/media/bars.407d96f0e9d1a36140913ade1478fa27.svg",
     "static/media/xmark.svg": "/logistic/static/media/xmark.60cf68c83c1745a9a5a3497035f6101d.svg",
-    "main.9cfce05a.css.map": "/logistic/static/css/main.9cfce05a.css.map",
-    "main.091f9d40.js.map": "/logistic/static/js/main.091f9d40.js.map"
+    "main.e54fe160.css.map": "/logistic/static/css/main.e54fe160.css.map",
+    "main.9e01cb7f.js.map": "/logistic/static/js/main.9e01cb7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cfce05a.css",
-    "static/js/main.091f9d40.js"
+    "static/css/main.e54fe160.css",
+    "static/js/main.9e01cb7f.js"
   ]
 }
