@@ -1,0 +1,18 @@
+
+
+
+.card_Swiper{
+    width: 100%;
+    padding: 0 !important;
+    background-image: url('./images/blue-bg.png');
+}
+
+
+.haha{
+    height: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+}

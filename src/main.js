@@ -12,6 +12,7 @@ import './services.css'
 
 import TextSlider from "./textSlider";
 import SwiperSlider from "./swiper";
+import SwiperCards from "./swiperCards"; 
 
 import clock from './images/clock.png'
 import logo  from './images/logo.png'
@@ -131,7 +132,7 @@ function Main() {
 
                             <div className="overlap_txt2">
                                 <p>
-                                Persati Logistic LLC is a 24/7 delivery/dispatching/carrier company. We offer following services: 
+                                Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company. We offer following services: 
                             <b>Recovery Trucks , Best Insurance, Brand New Cars, Experienced Drivers, Live Tracking System, Load Monitoring...</b>
                                 </p>
                             </div>
@@ -458,7 +459,12 @@ function Main() {
             <div className="compnay_swiper">
                 <SwiperSlider />
             </div>
+
             
+            <SwiperCards />
+            
+            
+
         </div>
     )
 }
