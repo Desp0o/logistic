@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    overflow: hidden;
 }
 
 .footer_number p{
@@ -30,3 +31,20 @@
     justify-content: center;
     gap: 60px;
 }
+
+
+
+
+.footer_block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.block_header{
+    font-family: roboto;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+

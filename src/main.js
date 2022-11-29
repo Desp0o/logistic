@@ -466,15 +466,17 @@ function Main() {
             
             <footer className="footer">
                 <div className="footer_inner">
-                    <div className="footer_number">
-                        <p>Contact us using Email</p>
-                        <p>info@persati-logistic.com</p>
-                    </div>
+                <div className="footer_number footer_block">
+                    <p className="block_header">Contact us using Email</p>
+                    <p>info@persati-logistic.com</p>
+                </div>
 
-                    <div className="footer_phone">
-                        <p>Contact us using number</p>
-                        <p>+1 (847) <span>861-0035</span></p>
-                    </div>
+                <div className="footer_phone footer_block">
+                    <p className="block_header">Contact us using number</p>
+                    <p>+1 (847) <span>861-0035</span></p>
+                </div>
+
+                
                 </div>
             </footer>
 
