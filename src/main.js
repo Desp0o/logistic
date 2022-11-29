@@ -23,8 +23,8 @@ import bars from './images/bars.svg'
 import bg2 from './images/bg2.webp'
 import bg1 from './images/bg1.jpg'
 import arrowUp from './images/arrowUp.svg'
-import headline from './images/headline.jpg'
 import mainbg from './images/bgMain.jfif'
+import boxturck from './images/boxtruck.jpg'
 
 function Main() {
     const navRef       = useRef()
@@ -90,7 +90,7 @@ function Main() {
             <svg  className="toTop_svg"  viewBox="0 0 24 24" version="1.1">
                 <title>arrow-up</title>
                 <desc>Created with sketchtool.</desc>
-                <g id="directional" stroke="none" stroke-width="1">
+                <g id="directional">
                     <g id="arrow-up">
                         <polygon id="Shape" points="4 15 12 7 20 15 18 17 12 11 6 17"></polygon>
                     </g>
@@ -116,6 +116,7 @@ function Main() {
             <div className={navbarClass} ref={navRef}>
                 <div className="navbar_left">
                     <img className="navbar_logo" src={logo} alt="company_logo" onClick={()=> refScroll(homeRef)}/>
+                    <p>Nexus Logistics LLC</p>
                 </div>
 
                 <div className="navbar_right">
@@ -145,7 +146,7 @@ function Main() {
 
             {/* სლაიდერი */}
             <div className={bgClass}>
-                <img className="sliderIMG" src={mainbg} alt="sliderIMG"/>
+                {/* <img className="sliderIMG" src={boxturck} alt="sliderIMG"/> */}
 
                 <TextSlider />
             </div>
@@ -371,7 +372,7 @@ function Main() {
                 <Fade bottom><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={1.5} delay={0.06} suffix={"+"}>
+                        <CountUp start={0} end={4100} duration={1.5} delay={0.06} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -386,7 +387,7 @@ function Main() {
                 <Fade bottom delay={200}><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={1.7} delay={0.08} suffix={"+"}>
+                        <CountUp start={0} end={3600} duration={1.7} delay={0.08} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -401,7 +402,7 @@ function Main() {
                 <Fade bottom delay={300}><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={1.9} delay={0.06} suffix={"+"}>
+                        <CountUp start={0} end={20} duration={1.9} delay={0.06} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -416,7 +417,7 @@ function Main() {
                 <Fade bottom delay={400}><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={2.1} delay={0.06} suffix={"+"}>
+                        <CountUp start={0} end={200} duration={2.1} delay={0.06} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -523,17 +524,7 @@ function Main() {
                             </div>
                         </div>
 
-                        <div className="footer_social">
-                            <div className="footer_social_inner">
-                            <svg className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                            </div>
-                        </div>
-
-                        <div className="footer_social">
-                            <div className="footer_social_inner">
-                            <svg className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                            </div>
-                        </div>
+                       
                     </div>
                 
                 </div>

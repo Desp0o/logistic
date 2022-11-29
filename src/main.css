@@ -165,7 +165,19 @@
 }
 
 .navbar_left{
+    display: flex;
+    align-items: center;
     width: 30%;
+}
+
+.navbar_left p{
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 900;
+
+    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar_logo{
@@ -184,6 +196,12 @@ ul{
     cursor: pointer;
     text-transform: capitalize;
     font-weight: 600;
+
+    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
 }
 
 .links_underline{
@@ -243,6 +261,10 @@ ul{
 
 
 @media (max-width:769px) {
+    .navbar_left{
+        width: 70%;
+    }
+    
     .top_section{
         display: none;
     }
@@ -287,8 +309,19 @@ ul{
 
 .sliderIMG{
     width: 100%;
-    height: 101%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.sliderIMG_active{
+    opacity: 1;
+}
+
+.slider_pos{
     object-position: center;
 }
 
@@ -345,7 +378,7 @@ ul{
     font-family: sans-serif;
     color: white;
     margin-left: -150%;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .header2{
@@ -361,7 +394,7 @@ ul{
 .slider_btn{
     width: 200px;
     height: 60px;
-    background:  linear-gradient(90deg, rgba(2,54,127,1) 0%, rgba(0,167,229,1) 100%);
+    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
     position: relative;
     cursor: pointer;
     display: flex;
@@ -423,19 +456,19 @@ ul{
 }
 
 .animation1{
-    animation: textmove 1.2s linear 0.2s 1 forwards;
+    animation: textmove 0.6s linear 0s 1 forwards;
 }
 
 .animation2{
-    animation: textmove 1.2s linear 0.6s 1 forwards;
+    animation: textmove 0.6s linear 0.6s 1 forwards;
 }
 
 .animation3{
-    animation: textmove 1.2s linear 0.6s 1 forwards;
+    animation: textmove 0.6s linear 0.6s 1 forwards;
 }
 
 .animation4{
-    animation: textmove 1.2s linear 0.7s 1 forwards;
+    animation: textmove 0.6s linear 0.7s 1 forwards;
 }
 
 @keyframes textmove {
@@ -476,7 +509,10 @@ ul{
 
     .sliderIMG{
         object-position: 75%;
-        object-fit: cover;
+    }
+
+    .slider_pos{
+        object-position: 94%;
     }
 }
 

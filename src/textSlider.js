@@ -1,9 +1,15 @@
 import {React, useEffect, useState} from "react";
 import './main.css'
 
+
+import mainbg from './images/bgMain.png'
+import boxturck from './images/boxtruck.jpg'
+
 const textArr = [
     {
        id:1,
+       image: `${mainbg}`,
+       key: 'a',
        smallText:'we delivery faster',
        header1: 'we help to',
        header2: 'deliver your load'
@@ -11,12 +17,16 @@ const textArr = [
   
     {
         id:2,
+        key: 'a1',
+        image: `${boxturck}`,
         smallText:'we search loads for you',
         header1: 'we help to grow',
         header2: 'your bussines'
     }
   ]
 
+  
+  
 function TextSlider() {
 
     const [index, setIndex] = useState(0)
@@ -41,21 +51,27 @@ function TextSlider() {
 
        return(
         <>
-        {textArr.map((text, slideIndex)=>{
+        {textArr.map((text, slideIndex, imgKey)=>{
 
             let textDiv = 'textslider'
             let text1 = 'line_smallH'
             let text2 = 'header1'
             let text3 = 'header2'
             let sliderBtn = 'slider_btn'
+            let sliderimg = 'sliderIMG'
         
             {index === slideIndex  ? textDiv = 'textslider actived' : textDiv = 'textslider'}
             {index === slideIndex  ? text1 = 'line_smallH animation1' : text1 = 'line_smallH'}
             {index === slideIndex  ? text2 = 'header1 animation2' : text2 = 'header1'}
             {index === slideIndex  ? text3 = 'header2 animation3' : text3 = 'header2'}
             {index === slideIndex  ? sliderBtn = 'slider_btn animation4' : sliderBtn = 'slider_btn'}
+            {index === slideIndex  ? sliderimg = 'sliderIMG sliderIMG_active' : sliderBtn = 'sliderIMG'}
+            {index === 1 ? sliderimg = 'sliderIMG sliderIMG_active slider_pos' : sliderBtn = 'sliderIMG'}
             
+            console.log(imgKey);
             return(
+              <>
+              <img className={sliderimg} src={text.image} key={imgKey} alt="sliderIMG"/>
                 <div className={textDiv} key={text.id}>
                     {/* ხაზი და ტექსტი */}
                     <div className={text1}>
@@ -74,6 +90,7 @@ function TextSlider() {
                         <p>our service</p>
                     </div>
                 </div>
+                </>
             )
         
         
