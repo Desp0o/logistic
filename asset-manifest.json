@@ -1,21 +1,29 @@
 {
   "files": {
-    "main.css": "/logistic/static/css/main.9966eebc.css",
-    "main.js": "/logistic/static/js/main.250dd88d.js",
+    "main.css": "/logistic/static/css/main.afa89827.css",
+    "main.js": "/logistic/static/js/main.ce786803.js",
     "static/media/slider_img.webp": "/logistic/static/media/slider_img.fa453e703d401c51b87c.webp",
+    "static/media/bg1.jpg": "/logistic/static/media/bg1.df4ccfe74736e69b5d1e.jpg",
     "static/media/Roboto-Regular.ttf": "/logistic/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Poppins-Regular.ttf": "/logistic/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/section_bg02.jpg": "/logistic/static/media/section_bg02.23a0d19e6b0e85218bef.jpg",
     "static/media/car1.jpg": "/logistic/static/media/car1.8066b5cb7ebff6fc8c25.jpg",
+    "static/media/bg2.webp": "/logistic/static/media/bg2.bf6d496267f13a583332.webp",
+    "static/media/blue-bg.png": "/logistic/static/media/blue-bg.a1aa9e979211935c703c.png",
     "static/media/logo.png": "/logistic/static/media/logo.18926342d53955fa8bfe.png",
+    "static/media/Amazon.png": "/logistic/static/media/Amazon.9e8b75b8eb8a37103529.png",
+    "static/media/sylectus.png": "/logistic/static/media/sylectus.3de535bc4ff9823f32e2.png",
+    "static/media/DHL.png": "/logistic/static/media/DHL.2bf501f2532201b77dcf.png",
+    "static/media/fedex.png": "/logistic/static/media/fedex.1723773a0ba55a5503bd.png",
+    "static/media/dat.png": "/logistic/static/media/dat.5923be3892b77f457ce2.png",
+    "static/media/123loadboard.png": "/logistic/static/media/123loadboard.e1e8ac80a81ffde74102.png",
     "index.html": "/logistic/index.html",
     "static/media/bars.svg": "/logistic/static/media/bars.407d96f0e9d1a36140913ade1478fa27.svg",
     "static/media/xmark.svg": "/logistic/static/media/xmark.60cf68c83c1745a9a5a3497035f6101d.svg",
-    "main.9966eebc.css.map": "/logistic/static/css/main.9966eebc.css.map",
-    "main.250dd88d.js.map": "/logistic/static/js/main.250dd88d.js.map"
+    "main.afa89827.css.map": "/logistic/static/css/main.afa89827.css.map",
+    "main.ce786803.js.map": "/logistic/static/js/main.ce786803.js.map"
   },
   "entrypoints": [
-    "static/css/main.9966eebc.css",
-    "static/js/main.250dd88d.js"
+    "static/css/main.afa89827.css",
+    "static/js/main.ce786803.js"
   ]
 }
