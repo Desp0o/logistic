@@ -3,7 +3,7 @@ import './main.css'
 
 
 import mainbg from './images/bgMain.png'
-import boxturck from './images/boxtruck.jpg'
+import boxturck from './images/boxtruck.png'
 
 const textArr = [
     {
@@ -66,7 +66,11 @@ function TextSlider() {
             {index === slideIndex  ? text3 = 'header2 animation3' : text3 = 'header2'}
             {index === slideIndex  ? sliderBtn = 'slider_btn animation4' : sliderBtn = 'slider_btn'}
             {index === slideIndex  ? sliderimg = 'sliderIMG sliderIMG_active' : sliderBtn = 'sliderIMG'}
-            {index === 1 ? sliderimg = 'sliderIMG sliderIMG_active slider_pos' : sliderBtn = 'sliderIMG'}
+            
+
+           if(index===1){
+            sliderimg = 'sliderIMG sliderIMG_active slider_pos'
+           }
             
             console.log(imgKey);
             return(

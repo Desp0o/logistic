@@ -314,7 +314,7 @@ ul{
     object-position: center;
     position: absolute;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .sliderIMG_active{
@@ -456,7 +456,7 @@ ul{
 }
 
 .animation1{
-    animation: textmove 0.6s linear 0s 1 forwards;
+    animation: textmove 0.6s linear 0.2s 1 forwards;
 }
 
 .animation2{
