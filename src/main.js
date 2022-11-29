@@ -1,6 +1,9 @@
 import {React, useRef, useState, useEffect} from "react";
 import Fade from 'react-reveal/Fade';
+
 import './main.css'
+import './searching.css'
+import './Counting_numbers.css'
 
 import TextSlider from "./textSlider";
 
@@ -10,6 +13,8 @@ import sliderIMG from './images/slider_img.webp'
 import car1 from './images/car1.jpg'
 import xmark from './images/xmark.svg'
 import bars from './images/bars.svg'
+import bg1 from './images/bg1.jpg'
+import bg2 from './images/bg2.webp'
 
 function Main() {
     const navRef = useRef()
@@ -88,7 +93,7 @@ function Main() {
 
             {/* სლაიდერი */}
             <div className="slider">
-                <img className="sliderIMG" src={sliderIMG} alt="sliderIMG"/>
+                <img className="sliderIMG" src={bg2} alt="sliderIMG"/>
 
                 <TextSlider />
             </div>
@@ -158,7 +163,9 @@ function Main() {
 
                     <Fade delay={200}><div className="service_card">
                         <div className="service_card_inner">
-                        <svg className="service_icons" version="1.1"  viewBox="0 0 32 32">
+                        <svg
+                        className="service_icons" version="1.1"  viewBox="0 0 32 32">
+                            
 
 <path  className="puchipuchi_een" d="M30.291,2.87l-9.581,25.26c-0.39,1.029-1.346,1.234-2.123,0.456c0,0-6.036-6.036-6.586-6.586
 	s-0.359-1.631,0.425-2.403l13.316-13.11c0.784-0.772,0.711-0.856-0.163-0.187L10.588,17.784c-0.873,0.669-2.224,0.58-3.002-0.198
@@ -294,6 +301,48 @@ function Main() {
                 </div>
             </div>
 
+            {/* სერჩინგი */}
+            <div className="searching">
+                <div className="searching_headers">
+                    <p>Are you Searching</p>
+                    <p>For a Delivery/Dispatching service?</p>
+                </div>
+
+                <div className="search_btn">
+                    <p>Contact Us</p>
+                </div>
+            </div>
+
+            <div className="counting_numbers">
+
+                <Fade bottom><div className="num_block">
+                    <div className="num_block_inner">
+                        <p className="number">100</p>
+                        <p className="under_txt">Deliveries</p>
+                    </div>
+                </div></Fade>
+
+                <Fade bottom delay={200}><div className="num_block">
+                    <div className="num_block_inner">
+                        <p className="number">100</p>
+                        <p className="under_txt">Happy Clinets</p>
+                    </div>
+                </div></Fade>
+
+                <Fade bottom delay={400}><div className="num_block">
+                    <div className="num_block_inner">
+                        <p className="number">100</p>
+                        <p className="under_txt">Dispatchers</p>
+                    </div>
+                </div></Fade>
+
+                <Fade bottom delay={600}><div className="num_block">
+                    <div className="num_block_inner">
+                        <p className="number">100</p>
+                        <p className="under_txt">Drivers</p>
+                    </div>
+                </div></Fade>
+            </div>
             
         </div>
     )

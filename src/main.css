@@ -14,7 +14,7 @@
     font-family: poppins, sans-serif;
     width: 100%;
     height: 50px;
-    background-color: #0D2D3E;
+    background-color: rgba(2,54,127,1);
 
     overflow-x: hidden;
     display: flex;
@@ -169,6 +169,7 @@ ul{
     }
     .navbar_logo{
         height: 50px;
+        width: auto;
     }
     ul{
         display: none;
@@ -210,6 +211,9 @@ ul{
     left: 15%;
     opacity: 0;
     transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .actived{
@@ -245,7 +249,7 @@ ul{
     font-weight: 900;
     text-transform: capitalize;
     font-family: sans-serif;
-    color: white;
+    color: #02367F;
     margin-left: -150%;
     transition: all 1s ease;
 }
@@ -255,7 +259,7 @@ ul{
     font-weight: 900;
     text-transform: capitalize;
     font-family: sans-serif;
-    color: white;
+    color: #02367F;
     margin-left: -150%;
     
 }
@@ -263,7 +267,7 @@ ul{
 .slider_btn{
     width: 200px;
     height: 60px;
-    background-color: #FE2144;
+    background:  linear-gradient(90deg, rgba(2,54,127,1) 0%, rgba(0,167,229,1) 100%);
     position: relative;
     cursor: pointer;
     display: flex;
@@ -277,7 +281,7 @@ ul{
     content: '';
     left: 0;
     width: 0;
-    height: 100%;
+    height: 105%;
     background-color: #fcfcfc;
     transition: all 0.5s ease;
     overflow: hidden;
@@ -381,7 +385,7 @@ ul{
 
 .what_we_do{
     overflow-x: hidden;
-    background-image: url('./images/section_bg02.jpg');
+    background-image: url('./images/blue-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center !important;;
@@ -648,7 +652,8 @@ ul{
     width: 100%;
     height: 0%;
     bottom: 0;
-    background-color: #EC3834;
+    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgba(0,167,229,1) 100%);
+
     transition: all 0.5s ease;
 }
 
@@ -657,7 +662,8 @@ ul{
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #EC3834;
+    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgba(0,167,229,1) 100%);
+
 }
 
 
@@ -696,9 +702,12 @@ ul{
     font-family: roboto;
 }
 
+
+
 .service_icons{
     width: 70px;
-    fill: #EC3834;
+    fill:rgba(2,54,127,1);
+
     transition: all 0.6s ease;
 }
 
@@ -736,3 +745,5 @@ ul{
         cursor: pointer;
     }
 }
+
+/************************** searching **************/
