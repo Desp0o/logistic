@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    overflow: hidden;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .footer_number p{

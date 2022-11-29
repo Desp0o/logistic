@@ -461,10 +461,11 @@ function Main() {
                 <SwiperSlider />
             </div>
 
-            
+            <div className="slider2">
             <SwiperCards />
+            </div>
             
-            <footer className="footer">
+            <div className="footer">
                 <div className="footer_inner">
                 <div className="footer_number footer_block">
                     <p className="block_header">Contact us using Email</p>
@@ -478,7 +479,7 @@ function Main() {
 
                 
                 </div>
-            </footer>
+            </div>
 
         </div>
     )

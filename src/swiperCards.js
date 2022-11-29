@@ -36,8 +36,8 @@ function SwiperCards() {
         className="card_Swiper"
       >
         <SwiperSlide className="haha">
-            <figure class="snip1390">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" class="profile" />
+            <figure className="snip1390">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" className="profile" />
                 <figcaption>
                     <h2>Eleanor Crisp</h2>
                     <blockquote>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</blockquote>
@@ -46,7 +46,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure class="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
+            <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" className="profile" />
                 <figcaption>
                     <h2>Gordon Norman</h2>
                     <blockquote>Wormwood : Calvin, how about you? Calvin : Hard to say ma'am. I think my cerebellum has just fused. </blockquote>
@@ -55,7 +55,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure class="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample5" class="profile" />
+            <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample5" className="profile" />
                 <figcaption>
                     <h2>Sue Shei</h2>
                     <blockquote>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</blockquote>
@@ -64,7 +64,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure class="snip1390 hover"><img src="https://www.devweb.cc/static/media/despo_img.59fe330819c9a9131b84.png" alt="profile-sample5" class="profile" />
+            <figure className="snip1390 hover"><img src="https://www.devweb.cc/static/media/despo_img.59fe330819c9a9131b84.png" alt="profile-sample5" className="profile" />
                 <figcaption>
                     <h2>Tonrike Despotashvili</h2>
                     <blockquote>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</blockquote>
