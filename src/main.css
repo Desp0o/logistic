@@ -472,6 +472,11 @@ ul{
     .slider_small_text{
         font-size: 14px;
     }
+
+    .sliderIMG{
+        object-position: 0% 100%;
+        object-fit: cover;
+    }
 }
 
 /*******************************************************/

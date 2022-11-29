@@ -21,6 +21,7 @@ import car1 from './images/car1.jpg'
 import xmark from './images/xmark.svg'
 import bars from './images/bars.svg'
 import bg2 from './images/bg2.webp'
+import bg1 from './images/bg1.jpg'
 import arrowUp from './images/arrowUp.svg'
 
 function Main() {
@@ -142,7 +143,7 @@ function Main() {
 
             {/* სლაიდერი */}
             <div className={bgClass}>
-                <img className="sliderIMG" src={bg2} alt="sliderIMG"/>
+                <img className="sliderIMG" src={bg1} alt="sliderIMG"/>
 
                 <TextSlider />
             </div>
