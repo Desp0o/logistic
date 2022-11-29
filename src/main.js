@@ -23,6 +23,8 @@ import bars from './images/bars.svg'
 import bg2 from './images/bg2.webp'
 import bg1 from './images/bg1.jpg'
 import arrowUp from './images/arrowUp.svg'
+import headline from './images/headline.jpg'
+import mainbg from './images/bgMain.jfif'
 
 function Main() {
     const navRef       = useRef()
@@ -143,7 +145,7 @@ function Main() {
 
             {/* სლაიდერი */}
             <div className={bgClass}>
-                <img className="sliderIMG" src={bg1} alt="sliderIMG"/>
+                <img className="sliderIMG" src={mainbg} alt="sliderIMG"/>
 
                 <TextSlider />
             </div>
@@ -153,7 +155,7 @@ function Main() {
                 <div className="what_we_do_overlap">
 
                     <div className="what_we_do_overlap_left">
-                        <img src={car1} alt="car"/>
+                        <img src={bg1} alt="car"/>
                     </div>
 
                     <div className="what_we_do_overlap_right">

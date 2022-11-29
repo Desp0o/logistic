@@ -343,7 +343,7 @@ ul{
     font-weight: 900;
     text-transform: capitalize;
     font-family: sans-serif;
-    color: #02367F;
+    color: white;
     margin-left: -150%;
     transition: all 1s ease;
 }
@@ -353,7 +353,7 @@ ul{
     font-weight: 900;
     text-transform: capitalize;
     font-family: sans-serif;
-    color: #02367F;
+    color: white;
     margin-left: -150%;
     
 }
@@ -448,6 +448,7 @@ ul{
 }
 
 @media (max-width:769px) {
+
     .header1,
     .header2{
         font-size: 27px;
@@ -474,7 +475,7 @@ ul{
     }
 
     .sliderIMG{
-        object-position: 0% 100%;
+        object-position: 75%;
         object-fit: cover;
     }
 }

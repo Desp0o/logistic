@@ -33,7 +33,8 @@
 .what_we_do_overlap_left img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
+    object-position: left;
 }
 
 .what_we_do_overlap_right{
