@@ -17,15 +17,19 @@ import SwiperCards from "./swiperCards";
 
 import clock from './images/clock.png'
 import logo  from './images/logo.png'
-import sliderIMG from './images/slider_img.webp'
 import car1 from './images/car1.jpg'
 import xmark from './images/xmark.svg'
 import bars from './images/bars.svg'
-import bg1 from './images/bg1.jpg'
 import bg2 from './images/bg2.webp'
+import arrowUp from './images/arrowUp.svg'
 
 function Main() {
-    const navRef = useRef()
+    const navRef       = useRef()
+    const homeRef      = useRef()
+    const aboutRef     = useRef()
+    const serviceRef   = useRef()
+    const customersRef = useRef()
+    const contactRef   = useRef()
 
     
     
@@ -34,6 +38,7 @@ function Main() {
     const [dashboard, setDashboard] = useState('dashboard')
     const [navbarClass, setNavbarClass] = useState('navbar')
     const [bgClass, setBgClass] = useState('slider')
+    const [topTop, setToTop] = useState('toTop')
     
     function handleClicl(){
         if(!isActive){
@@ -55,24 +60,49 @@ function Main() {
             setNavbarClass('navbar') 
             setBgClass('slider')
           }
-    });
 
+          if (window.scrollY > 500) {
+            setToTop('toTop topActive')
+          }else{
+            setToTop('toTop')
+          }
+
+    });
+    
+
+    //სოციალური ქსელების ლინკი
     const socialLink = () => {
         window.open('https://telegram.me/khatuni1', '_blank', 'noopener,noreferrer');
     }
    
+    //ჩასქროლვა მითითებულ დივთან
+    const refScroll = (refname) => {
+        refname.current?.scrollIntoView({behavior: 'smooth'});
+      };
 
     return(
         <div className="App">
 
+            <div className={topTop} onClick={()=>refScroll(homeRef)}>
+            <svg  className="toTop_svg"  viewBox="0 0 24 24" version="1.1">
+                <title>arrow-up</title>
+                <desc>Created with sketchtool.</desc>
+                <g id="directional" stroke="none" stroke-width="1">
+                    <g id="arrow-up">
+                        <polygon id="Shape" points="4 15 12 7 20 15 18 17 12 11 6 17"></polygon>
+                    </g>
+                </g>
+            </svg>
+            </div>
+
             {/* ზედა ფიქსირებული სექცია */}
-            <div className="top_section">
+            <div className="top_section" ref={homeRef}>
                 <div className="top_section_left">
                     <img className="top_section_left_icon" src={clock} alt="icon"/>
                     <p className="top_section_left_txt">MON - SUN: 24 HOURS</p>
                 </div>
 
-                <div className="top_section_right" onClick={socialLink}>
+                <div className="top_section_right">
                    <span className="svgClass"> <svg className="top_section_right_facebook_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 
                     225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></span>
                     <p className="top_section_right_txt">+1 (847) 861-0035</p>
@@ -82,16 +112,16 @@ function Main() {
             {/* ნავიგაცია */}
             <div className={navbarClass} ref={navRef}>
                 <div className="navbar_left">
-                    <img className="navbar_logo" src={logo} alt="company_logo" />
+                    <img className="navbar_logo" src={logo} alt="company_logo" onClick={()=> refScroll(homeRef)}/>
                 </div>
 
                 <div className="navbar_right">
                     <ul>
-                        <li className="navbar_links links_underline">home</li>
-                        <li className="navbar_links links_underline">about us</li>
-                        <li className="navbar_links links_underline">service</li>
-                        <li className="navbar_links links_underline">customers</li>
-                        <li className="navbar_links links_underline">contact</li>
+                        <li className="navbar_links links_underline" onClick={()=> refScroll(homeRef)}>home</li>
+                        <li className="navbar_links links_underline" onClick={()=> refScroll(aboutRef)}>about us</li>
+                        <li className="navbar_links links_underline" onClick={()=> refScroll(serviceRef)}>service</li>
+                        <li className="navbar_links links_underline" onClick={()=> refScroll(customersRef)}>customers</li>
+                        <li className="navbar_links links_underline" onClick={()=> refScroll(contactRef)}>contact</li>
                     </ul>
                 </div>
 
@@ -102,23 +132,23 @@ function Main() {
 
             <div className={dashboard}>
                     <ul>
-                        <li className="navbar_links">home</li>
-                        <li className="navbar_links">about us</li>
-                        <li className="navbar_links">service</li>
-                        <li className="navbar_links">customers</li>
-                        <li className="navbar_links">contact</li>
+                        <li className="navbar_links" onClick={()=> refScroll(homeRef)}>home</li>
+                        <li className="navbar_links" onClick={()=> refScroll(aboutRef)}>about us</li>
+                        <li className="navbar_links" onClick={()=> refScroll(serviceRef)}>service</li>
+                        <li className="navbar_links" onClick={()=> refScroll(customersRef)}>customers</li>
+                        <li className="navbar_links" onClick={()=> refScroll(contactRef)}>contact</li>
                     </ul>
             </div>
 
             {/* სლაიდერი */}
             <div className={bgClass}>
-                <img className="sliderIMG" src={bg1} alt="sliderIMG"/>
+                <img className="sliderIMG" src={bg2} alt="sliderIMG"/>
 
                 <TextSlider />
             </div>
 
             {/* about სექცია */}
-            <div className="what_we_do">
+            <div className="what_we_do" ref={aboutRef}>
                 <div className="what_we_do_overlap">
 
                     <div className="what_we_do_overlap_left">
@@ -158,7 +188,7 @@ function Main() {
             </div>
 
             {/* სერვისები */}
-            <div className="services">
+            <div className="services" ref={serviceRef}>
                 <div className="service_textes">
                     <div className="service_line_header">
                         <div className="service_line"></div>
@@ -465,22 +495,43 @@ function Main() {
                 <SwiperSlider />
             </div>
 
-            <div className="slider2">
+            {/* რევიუს დივი */}
+            <div className="slider2" ref={customersRef}>
             <SwiperCards />
             </div>
             
-            <div className="footer">
+            {/* ფუტერი */}
+            <div className="footer" ref={contactRef}>
                 <div className="footer_inner">
-                <div className="footer_number footer_block">
-                    <p className="block_header">Contact us using Email</p>
-                    <p>info@persati-logistic.com</p>
-                </div>
+                    <div className="footer_number footer_block">
+                        <p className="block_header">Contact us using Email</p>
+                        <p>info@persati-logistic.com</p>
+                    </div>
 
-                <div className="footer_phone footer_block">
-                    <p className="block_header">Contact us using number</p>
-                    <p>+1 (847) <span>861-0035</span></p>
-                </div>
+                    <div className="footer_phone footer_block">
+                        <p className="block_header">Contact us using number</p>
+                        <p>+1 (847) <span>861-0035</span></p>
+                    </div>
 
+                    <div className="footer_social_block">
+                        <div className="footer_social">
+                            <div className="footer_social_inner">
+                            <svg className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                            </div>
+                        </div>
+
+                        <div className="footer_social">
+                            <div className="footer_social_inner">
+                            <svg className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                            </div>
+                        </div>
+
+                        <div className="footer_social">
+                            <div className="footer_social_inner">
+                            <svg className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                            </div>
+                        </div>
+                    </div>
                 
                 </div>
             </div>
@@ -490,3 +541,5 @@ function Main() {
 }
 
 export default Main;
+
+

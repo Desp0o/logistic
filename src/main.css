@@ -9,25 +9,72 @@
 }
 
 
-
-.top_section{
-    font-family: poppins, sans-serif;
-    width: 100%;
+.toTop{
+    width: 50px;
     height: 50px;
-    background-color: rgba(2,54,127,1);
 
-    overflow-x: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 7;
+
+    right: 30px;
+    bottom: 30px;
+
+    background-color: #02367F;
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 16px 0px rgba(2, 54, 127, 0.5);
+    -webkit-box-shadow: 2px 2px 16px 0px rgba(2, 54, 127, 0.5);
+    -moz-box-shadow: 2px 2px 16px 0px rgba(2, 54, 127, 0.5);
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    opacity: 0;
+}
+
+.toTop:hover{
+    transform: scale(1.05);
+}
+
+.topActive{
+    opacity: 1;
+}
+
+.toTop_svg{
+    width: 30px;
+    
+    fill: white;
+    transition: all 0.5s ease;
+}
+
+.toTop_svg:hover{
+    transform: scale(1.05);
+}
+
+
+.top_section{
+    width: 100%;
+    height: 50px;
+
+    font-family: poppins, sans-serif;
+    background-color: rgba(2,54,127,1);
+
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
 }
 
 .top_section_left,
 .top_section_right{
-  width: 50%;
-  height: 100%;
+    width: 50%;
+    height: 100%;
   
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .top_section_left{
@@ -52,8 +99,10 @@
 
 .top_section_right_txt{
     font-size: 16px;
-    cursor: pointer;
     color: white;
+
+    cursor: pointer;
+
     transition: all 0.3s ease;
 }
 
@@ -64,48 +113,55 @@
 .svgClass{
     height: 50%;
     width: 2ch;
-    cursor: pointer;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
 }
 
 .top_section_right_facebook_icon{
     height: 20px;
+
     fill: white;
-    transition: all 0.3s ease;
 
     transform-style: preserve-3d;
     transform: perspective(3000px) rotateY(0deg);
+
+    transition: all 0.3s ease;
 }
 
 .svgClass:hover .top_section_right_facebook_icon{
-    transform: perspective(3000px) rotateY(180deg) ;
     fill: #EC3834;
+
+    transform: perspective(3000px) rotateY(180deg);
 }
 
-
-/********************/
-/***** NAVBAR ******/
-
 .navbar{
-    font-family: poppins, sans-serif;
     width: 100%;
     height: 80px;
     top:50px;
-    display: flex;
-    z-index: 6;
+
     position: fixed;
+    z-index: 6;
+
+    display: flex;
     align-items: center;
     justify-content: space-around;
+
+    font-family: poppins, sans-serif;
     background-color: white;
+
     transition: all 0.2s ease;
 }
 
 .navbar_fixed{
-    transition: all 0.2s ease;
     top:0;
+
     background-color: rgb(245, 245, 245);
+
+    transition: all 0.2s ease;
 }
 
 .navbar_left{
@@ -114,6 +170,8 @@
 
 .navbar_logo{
     width: 80px;
+
+    cursor: pointer;
 }
 
 ul{
@@ -125,6 +183,7 @@ ul{
     list-style: none;
     cursor: pointer;
     text-transform: capitalize;
+    font-weight: 600;
 }
 
 .links_underline{
