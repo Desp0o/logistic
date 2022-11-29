@@ -7,6 +7,8 @@ import './main.css'
 import './searching.css'
 import './Counting_numbers.css'
 import './swiper.css'
+import './aboutUs.css'
+import './services.css'
 
 import TextSlider from "./textSlider";
 import SwiperSlider from "./swiper";
@@ -44,7 +46,7 @@ function Main() {
     }
 
     window.addEventListener('scroll', ()=>{
-        if (window.scrollY > 50) {
+        if (window.scrollY > 10) {
             setNavbarClass('navbar navbar_fixed') 
             setBgClass('slider slider_after_fixed')
           }else{
@@ -353,7 +355,7 @@ function Main() {
                                 )}
                              </CountUp>    
                         </p>
-                        <p className="under_txt">Deliveries</p>
+                        <p className="under_txt">Happy Clinets</p>
                     </div>
                 </div></Fade>
 
@@ -368,7 +370,7 @@ function Main() {
                                 )}
                              </CountUp>    
                         </p>
-                        <p className="under_txt">Deliveries</p>
+                        <p className="under_txt">Dispatchers</p>
                     </div>
                 </div></Fade>
 
@@ -383,7 +385,7 @@ function Main() {
                                 )}
                              </CountUp>    
                         </p>
-                        <p className="under_txt">Deliveries</p>
+                        <p className="under_txt">Drivers</p>
                     </div>
                 </div></Fade>
             </div>
@@ -417,7 +419,7 @@ function Main() {
                                 )}
                              </CountUp>    
                         </p>
-                        <p className="under_txt">Deliveries</p>
+                        <p className="under_txt">Happy Clinets</p>
                     </div>
                 </div></Fade>
 
@@ -432,7 +434,7 @@ function Main() {
                                 )}
                              </CountUp>    
                         </p>
-                        <p className="under_txt">Deliveries</p>
+                        <p className="under_txt">Dispatchers</p>
                     </div>
                 </div></Fade>
 
@@ -447,7 +449,7 @@ function Main() {
                                 )}
                              </CountUp>    
                         </p>
-                        <p className="under_txt">Deliveries</p>
+                        <p className="under_txt">Drivers</p>
                     </div>
                 </div></Fade>
             </div>

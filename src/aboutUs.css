@@ -1,0 +1,203 @@
+.what_we_do{
+    overflow-x: hidden;
+    background-image: url('./images/blue-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center !important;;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -2px 9px 0px #474747
+}
+
+
+
+.what_we_do_overlap{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    width: 90%;
+    height: 80%;
+    display: flex;
+}
+
+.what_we_do_overlap_left{
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.what_we_do_overlap_left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.what_we_do_overlap_right{
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.overlap_header{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: roboto;
+}
+
+.line{
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.overlap_txt1 p{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+
+.overlap_txt2 p{
+    font-family: roboto;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+}
+
+.overlap_txt3 p{
+    font-family: roboto;
+    font-size: 15px;
+    color: #cecece;
+    line-height: 30px;
+}
+
+.overlap_btn{
+    width: 250px;
+    height: 60px;
+    background-color: #FE2144;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlap_btn::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fcfcfc;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.overlap_btn:hover:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    background-color: #fcfcfc;
+}
+
+.overlap_btn p{
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    font-family: roboto;
+    font-size: 14px;
+}
+
+.overlap_btn p:before{
+    content: 'happy customers';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    left: 0;
+    color: rgb(5, 5, 5);
+    transition: all 0.6s ease;
+}
+
+.overlap_btn:hover p:before{
+    content: 'happy customers';
+    position: absolute;
+    opacity: 1;
+}
+
+
+
+@media (min-width:1400px) {
+    .what_we_do{
+        height: 80%;
+    }
+
+    .what_we_do_overlap{
+        width: 65%;
+        height: 75%;
+    }
+
+    .what_we_do_left{
+        width: 35%;
+    }
+    
+    .what_we_do_right{
+        width: 65%;
+    }
+}
+
+@media (max-width:769px) {
+    .what_we_do{
+        height: fit-content;
+    }
+
+    .what_we_do_left{
+        display: none;
+    }
+    .what_we_do_right{
+        width: 100vh;
+    }
+    .what_we_do_overlap{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .what_we_do_overlap_left{
+        width: 100%;
+        height: 30%;
+    }
+
+    .what_we_do_overlap_right{
+        width: 100%;
+        padding: 0;
+        gap: 20px;
+        justify-content: unset;
+    }
+
+    .overlap_header{
+        font-size: 14px;
+    }
+
+    .overlap_txt1  p{
+        font-size: 26px;
+    }
+    .overlap_txt2 p{
+        font-size: 17px;
+    }
+    
+}
+
+
