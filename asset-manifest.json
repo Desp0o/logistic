@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/logistic/static/css/main.290feb49.css",
-    "main.js": "/logistic/static/js/main.da996c27.js",
+    "main.css": "/logistic/static/css/main.7fa3ae3e.css",
+    "main.js": "/logistic/static/js/main.98659d25.js",
     "static/media/bgMain.png": "/logistic/static/media/bgMain.4eeb252ca48faac7aa5d.png",
+    "static/media/boxtruck.png": "/logistic/static/media/boxtruck.0c4b5f9b2f55b1223326.png",
     "static/media/bg1.jpg": "/logistic/static/media/bg1.df4ccfe74736e69b5d1e.jpg",
+    "static/media/boxtruck.jpg": "/logistic/static/media/boxtruck.4bac3a1ac86af10b2e4e.jpg",
     "static/media/bgMain.jfif": "/logistic/static/media/bgMain.0d657f9efe192cbca4b7.jfif",
-    "static/media/boxtruck.jpg": "/logistic/static/media/boxtruck.257ef32fecfc59ae7240.jpg",
     "static/media/Roboto-Regular.ttf": "/logistic/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Poppins-Regular.ttf": "/logistic/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/car1.jpg": "/logistic/static/media/car1.8066b5cb7ebff6fc8c25.jpg",
@@ -22,11 +23,11 @@
     "static/media/bars.svg": "/logistic/static/media/bars.407d96f0e9d1a36140913ade1478fa27.svg",
     "static/media/xmark.svg": "/logistic/static/media/xmark.60cf68c83c1745a9a5a3497035f6101d.svg",
     "static/media/arrowUp.svg": "/logistic/static/media/arrowUp.f7938c74cac7a14b30492db18acfa8e8.svg",
-    "main.290feb49.css.map": "/logistic/static/css/main.290feb49.css.map",
-    "main.da996c27.js.map": "/logistic/static/js/main.da996c27.js.map"
+    "main.7fa3ae3e.css.map": "/logistic/static/css/main.7fa3ae3e.css.map",
+    "main.98659d25.js.map": "/logistic/static/js/main.98659d25.js.map"
   },
   "entrypoints": [
-    "static/css/main.290feb49.css",
-    "static/js/main.da996c27.js"
+    "static/css/main.7fa3ae3e.css",
+    "static/js/main.98659d25.js"
   ]
 }
