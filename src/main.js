@@ -6,8 +6,10 @@ import VisibilitySensor from 'react-visibility-sensor';
 import './main.css'
 import './searching.css'
 import './Counting_numbers.css'
+import './swiper.css'
 
 import TextSlider from "./textSlider";
+import SwiperSlider from "./swiper";
 
 import clock from './images/clock.png'
 import logo  from './images/logo.png'
@@ -315,6 +317,7 @@ function Main() {
                 </div>
             </div>
 
+            {/*ციფრების თვლა*/}
             <div className="counting_numbers">
 
                 <Fade bottom><div className="num_block">
@@ -378,6 +381,7 @@ function Main() {
                 </div></Fade>
             </div>
 
+            {/*ციფრების თვლა რესპონსივი*/}
             <div className="counting_numbers_responsive">
 
                 <Fade left><div className="num_block">
@@ -439,6 +443,11 @@ function Main() {
                         <p className="under_txt">Deliveries</p>
                     </div>
                 </div></Fade>
+            </div>
+
+            {/* compnay swiper */}
+            <div className="compnay_swiper">
+                <SwiperSlider />
             </div>
             
         </div>
