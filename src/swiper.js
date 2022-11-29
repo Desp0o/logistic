@@ -50,13 +50,13 @@ function SwiperSlider() {
             disableOnInteraction: false,
           }}
         modules={[Autoplay,Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide><img src={leadboard}/></SwiperSlide>
+        className="mySwiper">
         <SwiperSlide><img src={amazon}/></SwiperSlide>
         <SwiperSlide><img src={dat}/></SwiperSlide>
         <SwiperSlide><img src={sylectus}/></SwiperSlide>
+        <SwiperSlide><img src={leadboard}/></SwiperSlide>
         <SwiperSlide><img src={dhl}/></SwiperSlide>
+        <SwiperSlide><img src={leadboard}/></SwiperSlide>
         <SwiperSlide><img src={fedex}/></SwiperSlide>
       </Swiper>
     </>

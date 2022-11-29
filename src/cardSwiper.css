@@ -4,6 +4,7 @@
 .card_Swiper{
     width: 100%;
     padding: 0 !important;
+    
     background-image: url('./images/blue-bg.png');
 }
 
@@ -15,4 +16,5 @@
     justify-content: center;
     width: 100%;
     background-color: transparent;
+    cursor: pointer;
 }

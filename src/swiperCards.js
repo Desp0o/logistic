@@ -40,7 +40,6 @@ function SwiperCards() {
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" class="profile" />
                 <figcaption>
                     <h2>Eleanor Crisp</h2>
-                    <h4>UX Design</h4>
                     <blockquote>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</blockquote>
                 </figcaption>
             </figure>
