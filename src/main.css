@@ -230,6 +230,7 @@ ul{
 
 .burger_menu_icon{
     width: 20px;
+    fill: #024490;
 }
 
 .dashboard{
@@ -538,7 +539,7 @@ figure.snip1390 {
   font-size: 16px;
   padding: 30px;
   /* background-color: rgba(2,54,127,1); */
-  background-image: url('./images/blue-bg.png');
+  /* background-image: url('./images/blue-bg.png'); */
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
