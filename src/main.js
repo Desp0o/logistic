@@ -56,6 +56,10 @@ function Main() {
             setBgClass('slider')
           }
     });
+
+    const socialLink = () => {
+        window.open('https://telegram.me/khatuni1', '_blank', 'noopener,noreferrer');
+    }
    
 
     return(
@@ -68,7 +72,7 @@ function Main() {
                     <p className="top_section_left_txt">MON - SUN: 24 HOURS</p>
                 </div>
 
-                <div className="top_section_right">
+                <div className="top_section_right" onClick={socialLink}>
                    <span className="svgClass"> <svg className="top_section_right_facebook_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 
                     225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></span>
                     <p className="top_section_right_txt">+1 (847) 861-0035</p>
@@ -108,7 +112,7 @@ function Main() {
 
             {/* სლაიდერი */}
             <div className={bgClass}>
-                <img className="sliderIMG" src={bg2} alt="sliderIMG"/>
+                <img className="sliderIMG" src={bg1} alt="sliderIMG"/>
 
                 <TextSlider />
             </div>
