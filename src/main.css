@@ -92,10 +92,20 @@
     font-family: poppins, sans-serif;
     width: 100%;
     height: 100px;
+    top:50px;
     display: flex;
+    z-index: 6;
+    position: fixed;
     align-items: center;
     justify-content: space-around;
     background-color: white;
+    transition: all 0.4s ease;
+}
+
+.navbar_fixed{
+    transition: all 0.4s ease;
+    top:0;
+    background-color: rgb(245, 245, 245);
 }
 
 .navbar_left{
@@ -103,8 +113,7 @@
 }
 
 .navbar_logo{
-    height: 100px;
-    width: auto;
+    width: 105px;
 }
 
 ul{
@@ -116,6 +125,25 @@ ul{
     list-style: none;
     cursor: pointer;
     text-transform: capitalize;
+}
+
+.links_underline{
+    position: relative;
+}
+
+.links_underline::before{
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    width:0%;
+    height: 2px;
+    background-color: #02367F;
+    transition: all 0.4s ease;
+}
+
+.links_underline:hover:before{
+    width:100%;
 }
 
 .burger_menu{
@@ -166,6 +194,7 @@ ul{
         padding-right: 10px;
         position: fixed;
         z-index: 6;
+        top: 0;
     }
     .navbar_logo{
         height: 50px;
@@ -192,12 +221,17 @@ ul{
     height: 100%;
 }
 
+/* .slider_after_fixed{
+    margin-top: 100px;
+} */
+
 .sliderIMG{
     width: 100%;
     height: 101%;
     object-fit: cover;
     object-position: center;
 }
+
 
 .textslider{
     padding-top: 100px;

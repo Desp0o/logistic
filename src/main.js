@@ -23,15 +23,13 @@ import bg2 from './images/bg2.webp'
 function Main() {
     const navRef = useRef()
 
-    window.addEventListener('scroll', ()=>{
-        if (window.scrollY > 500) {
-                
-          }
-    });
+    
     
     const [burgerLogo, setBurgerLogo] = useState(bars)
     const [isActive, setIsActive] = useState(false)
     const [dashboard, setDashboard] = useState('dashboard')
+    const [navbarClass, setNavbarClass] = useState('navbar')
+    const [bgClass, setBgClass] = useState('slider')
     
     function handleClicl(){
         if(!isActive){
@@ -45,6 +43,15 @@ function Main() {
         }
     }
 
+    window.addEventListener('scroll', ()=>{
+        if (window.scrollY > 50) {
+            setNavbarClass('navbar navbar_fixed') 
+            setBgClass('slider slider_after_fixed')
+          }else{
+            setNavbarClass('navbar') 
+            setBgClass('slider')
+          }
+    });
    
 
     return(
@@ -65,18 +72,18 @@ function Main() {
             </div>
 
             {/* ნავიგაცია */}
-            <div className="navbar" ref={navRef}>
+            <div className={navbarClass} ref={navRef}>
                 <div className="navbar_left">
                     <img className="navbar_logo" src={logo} alt="company_logo" />
                 </div>
 
                 <div className="navbar_right">
                     <ul>
-                        <li className="navbar_links">home</li>
-                        <li className="navbar_links">about us</li>
-                        <li className="navbar_links">service</li>
-                        <li className="navbar_links">customers</li>
-                        <li className="navbar_links">contact</li>
+                        <li className="navbar_links links_underline">home</li>
+                        <li className="navbar_links links_underline">about us</li>
+                        <li className="navbar_links links_underline">service</li>
+                        <li className="navbar_links links_underline">customers</li>
+                        <li className="navbar_links links_underline">contact</li>
                     </ul>
                 </div>
 
@@ -96,7 +103,7 @@ function Main() {
             </div>
 
             {/* სლაიდერი */}
-            <div className="slider">
+            <div className={bgClass}>
                 <img className="sliderIMG" src={bg2} alt="sliderIMG"/>
 
                 <TextSlider />
