@@ -74,8 +74,8 @@ function Main() {
     
 
     //სოციალური ქსელების ლინკი
-    const socialLink = () => {
-        window.open('https://telegram.me/khatuni1', '_blank', 'noopener,noreferrer');
+    const socialLink = (link) => {
+        window.open(link, '_blank', 'noopener,noreferrer');
     }
    
     //ჩასქროლვა მითითებულ დივთან
@@ -106,7 +106,7 @@ function Main() {
                 </div>
 
                 <div className="top_section_right">
-                   <span className="svgClass"> <svg className="top_section_right_facebook_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 
+                   <span className="svgClass" onClick={()=>socialLink('https://www.facebook.com/profile.php?id=100087955494800')}> <svg className="top_section_right_facebook_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 
                     225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></span>
                     <p className="top_section_right_txt">+1 (847) 861-0035</p>
                 </div>
@@ -520,7 +520,7 @@ function Main() {
                     <div className="footer_social_block">
                         <div className="footer_social">
                             <div className="footer_social_inner">
-                            <svg className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                            <svg onClick={()=>socialLink('https://www.facebook.com/profile.php?id=100087955494800')} className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
                             </div>
                         </div>
 

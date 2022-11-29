@@ -59,21 +59,9 @@
     padding: 5px;
 }
 
-.footer_social::before{
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 2%;
-    top:0;
-    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
-    overflow: hidden;
-    transition: all 0.5s ease;
-}
 
-.footer_social:hover:before{
-    height: 100%;
-    overflow: hidden;
-}
+
+
 
 .footer_social_inner{
     overflow: hidden;
@@ -90,12 +78,10 @@
 .social_logo{
     width: 45px;
     fill: rgba(2,54,127,1);
+    cursor: pointer;
     transition: all 0.6s ease;
 }
 
-.footer_social_inner:hover .social_logo{
-    fill: white;
-}
 
 .footer_social_block{
     display: flex;

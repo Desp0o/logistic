@@ -4,10 +4,10 @@
 .card_Swiper{
     width: 100%;
     padding: 0 !important;
-    background-image: url('./images/boxdelivery.webp');
+    background-image: url('./images/boxes2.png');
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 100% 80%;
 }
 
 
