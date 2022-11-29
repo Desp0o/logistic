@@ -138,7 +138,7 @@ ul{
     left: 0;
     width:0%;
     height: 2px;
-    background-color: #02367F;
+    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgba(0,167,229,1) 100%);
     transition: all 0.4s ease;
 }
 
