@@ -262,6 +262,9 @@ ul{
 
 
 @media (max-width:769px) {
+    .toTop{
+        display: none;
+    }
     .navbar_left{
         width: 70%;
     }
