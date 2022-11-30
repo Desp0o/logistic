@@ -43,7 +43,7 @@ function SwiperCards() {
         loop={true}
         loopFillGroupWithBlank={false}
         autoplay={{
-            delay: 2000,
+            delay: 5000,
             disableOnInteraction: false,
           }}
         modules={[Autoplay,Pagination, Navigation]}
