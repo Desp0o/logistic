@@ -18,14 +18,27 @@ import fedex from './images/fedex.png'
 import {Autoplay, Pagination, Navigation } from "swiper";
 function SwiperCards() {
 
+    function getWindowSize() {
+        const {innerWidth, innerHeight} = window;
+        return {innerWidth, innerHeight};
+      }
 
+      const [slideNumber, setSlideNumber] = useState(2)
+    
+    useEffect(() => {
+        if(window.innerWidth < 769){
+            setSlideNumber(1)
+        }
+
+        return
+      }, [window.innerWidth]);
 
   return (
     <div >
       <Swiper 
-        slidesPerView={1}
+        slidesPerView={slideNumber}
         spaceBetween={30}
-        slidesPerGroup={1}
+        slidesPerGroup={slideNumber}
         loop={true}
         loopFillGroupWithBlank={false}
         autoplay={{

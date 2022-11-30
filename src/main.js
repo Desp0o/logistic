@@ -103,7 +103,7 @@ function Main() {
                 <div className="top_section_right">
                    <span className="svgClass" onClick={()=>socialLink('https://www.facebook.com/profile.php?id=100087955494800')}> <svg className="top_section_right_facebook_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 
                     225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></span>
-                    <p className="top_section_right_txt">+1 (847) 861-0035</p>
+                    <p className="top_section_right_txt">+1 (213) 785-7673</p>
                 </div>
             </div>
 
@@ -111,7 +111,7 @@ function Main() {
             <div className={navbarClass} ref={navRef}>
                 <div className="navbar_left">
                     <img className="navbar_logo" src={logo} alt="company_logo" onClick={()=> refScroll(homeRef)}/>
-                    <p>Nexus Logistics LLC</p>
+                    <p onClick={()=> refScroll(homeRef)}>Nexus Logistics LLC</p>
                 </div>
 
                 <div className="navbar_right">
@@ -502,26 +502,29 @@ function Main() {
             {/* ფუტერი */}
             <div className="footer" ref={contactRef}>
                 <div className="footer_inner">
-                    <div className="footer_number footer_block">
-                        <p className="block_header">Contact us using Email</p>
-                        <p>info@persati-logistic.com</p>
-                    </div>
-
-                    <div className="footer_phone footer_block">
-                        <p className="block_header">Contact us using number</p>
-                        <p>+1 (847) <span>861-0035</span></p>
-                    </div>
-
-                    <div className="footer_social_block">
-                        <div className="footer_social">
-                            <div className="footer_social_inner">
-                            <svg onClick={()=>socialLink('https://www.facebook.com/profile.php?id=100087955494800')} className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                            </div>
+                        <div className="footer_block">
+                            <p className="block_header">Adress:</p>
+                            <p>2060 NESTER ST APT 2B PHILADELPHIA, PA 19115</p>
                         </div>
 
-                       
+                        <div className="footer_block">
+                            <p className="block_header">Email:</p>
+                            <p>Logisticshrnexus@gmail.com</p>
+                        </div>
+
+                        <div className="footer_block">
+                            <p className="block_header">Number:</p>
+                            <p>+1 (213) 785-7673</p>
+                        </div>
+                </div>
+
+                <div className="footer_social_block">
+                    <div className="footer_social">
+                        <div className="footer_social_inner">
+                            <p>Follo Us On</p>
+                            <svg onClick={()=>socialLink('https://www.facebook.com/profile.php?id=100087955494800')} className="social_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        </div>
                     </div>
-                
                 </div>
             </div>
 

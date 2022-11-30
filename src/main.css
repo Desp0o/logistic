@@ -106,10 +106,6 @@
     transition: all 0.3s ease;
 }
 
-.top_section_right_txt:hover{
-    color: #EC3834;
-}
-
 .svgClass{
     height: 50%;
     width: 2ch;
@@ -133,8 +129,6 @@
 }
 
 .svgClass:hover .top_section_right_facebook_icon{
-    fill: #EC3834;
-
     transform: perspective(3000px) rotateY(180deg);
 }
 
@@ -174,7 +168,8 @@
     font-family: roboto;
     font-size: 18px;
     font-weight: 900;
-
+    text-transform: uppercase;
+    cursor: pointer;
     background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -200,8 +195,6 @@ ul{
     background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    
 }
 
 .links_underline{
@@ -367,14 +360,14 @@ ul{
 .slider_line{
     width: 50px;
     height: 2px;
-    background-color: #EC3834;
+    background-color: white;
     transition: all 0.5s ease;
 }
 .slider_small_text{
     font-size: 18px;
     font-family: roboto;
     text-transform: uppercase;
-    color: #EC3834;
+    color: white;
 }
 
 .header1{
@@ -462,19 +455,19 @@ ul{
 }
 
 .animation1{
-    animation: textmove 0.6s linear 0.2s 1 forwards;
+    animation: textmove 0.8s linear 0.2s 1 forwards;
 }
 
 .animation2{
-    animation: textmove 0.6s linear 0.6s 1 forwards;
+    animation: textmove 0.8s linear 0.6s 1 forwards;
 }
 
 .animation3{
-    animation: textmove 0.6s linear 0.6s 1 forwards;
+    animation: textmove 0.8s linear 0.6s 1 forwards;
 }
 
 .animation4{
-    animation: textmove 0.6s linear 0.7s 1 forwards;
+    animation: textmove 0.8s linear 0.7s 1 forwards;
 }
 
 @keyframes textmove {

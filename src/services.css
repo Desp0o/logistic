@@ -7,6 +7,7 @@
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #0D2D3E;
 }
 .service_textes{
     width: 100%;
@@ -19,12 +20,12 @@
     font-size: 18px;
     gap: 10px;
     font-family: roboto;
-    color: #EE796C;
+    color: #0D2D3E;
 }
 .service_line{
     width: 50px;
     height: 2px;
-    background-color: #EC3834;
+    background-color: #0D2D3E;
     border-radius: 10px;
 }
 
