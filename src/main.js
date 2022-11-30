@@ -220,12 +220,12 @@ function Main() {
                         className="service_icons" version="1.1"  viewBox="0 0 32 32">
                             
 
-<path  className="puchipuchi_een" d="M30.291,2.87l-9.581,25.26c-0.39,1.029-1.346,1.234-2.123,0.456c0,0-6.036-6.036-6.586-6.586
-	s-0.359-1.631,0.425-2.403l13.316-13.11c0.784-0.772,0.711-0.856-0.163-0.187L10.588,17.784c-0.873,0.669-2.224,0.58-3.002-0.198
-	l-4.172-4.172c-0.778-0.778-0.573-1.733,0.456-2.124l25.26-9.581C30.159,1.319,30.681,1.841,30.291,2.87z M8.707,20.121
-	C8.318,19.732,8,19.864,8,20.414V25c0,0.55,0.386,0.768,0.857,0.485l2.401-1.441c0.472-0.283,0.539-0.833,0.15-1.222L8.707,20.121z"
-	/>
-</svg>
+                            <path  className="puchipuchi_een" d="M30.291,2.87l-9.581,25.26c-0.39,1.029-1.346,1.234-2.123,0.456c0,0-6.036-6.036-6.586-6.586
+                                s-0.359-1.631,0.425-2.403l13.316-13.11c0.784-0.772,0.711-0.856-0.163-0.187L10.588,17.784c-0.873,0.669-2.224,0.58-3.002-0.198
+                                l-4.172-4.172c-0.778-0.778-0.573-1.733,0.456-2.124l25.26-9.581C30.159,1.319,30.681,1.841,30.291,2.87z M8.707,20.121
+                                C8.318,19.732,8,19.864,8,20.414V25c0,0.55,0.386,0.768,0.857,0.485l2.401-1.441c0.472-0.283,0.539-0.833,0.15-1.222L8.707,20.121z"
+                                />
+                            </svg>
 
                             <p className="card_txt1">Dispatching Service</p>
 
@@ -387,7 +387,7 @@ function Main() {
                 <Fade bottom delay={200}><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={3600} duration={1.7} delay={0.08} suffix={"+"}>
+                        <CountUp start={0} end={3800} duration={1.7} delay={0.08} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -436,7 +436,7 @@ function Main() {
                 <Fade left><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={1} delay={0.06} suffix={"+"}>
+                        <CountUp start={0} end={4100} duration={1} delay={0.06} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -451,7 +451,7 @@ function Main() {
                 <Fade right delay={200}><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={1} delay={0.08} suffix={"+"}>
+                        <CountUp start={0} end={3800} duration={1} delay={0.08} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -466,7 +466,7 @@ function Main() {
                 <Fade left delay={300}><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={1} delay={0.06} suffix={"+"}>
+                        <CountUp start={0} end={20} duration={1} delay={0.06} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
@@ -481,7 +481,7 @@ function Main() {
                 <Fade right delay={400}><div className="num_block">
                     <div className="num_block_inner">
                         <p className="number">
-                        <CountUp start={0} end={5200} duration={1} delay={0.06} suffix={"+"}>
+                        <CountUp start={0} end={200} duration={1} delay={0.06} suffix={"+"}>
                                 {({ countUpRef, start }) => (
                                     <VisibilitySensor onChange={start} delayedCall={true}>
                                         <span ref={countUpRef} />
