@@ -33,7 +33,7 @@ function TextSlider() {
     const slideLength = textArr.length
 
     useEffect(()=>{
-
+    
         const textTimer = setInterval(()=>{
           if(index === slideLength-1){
             setIndex(0)

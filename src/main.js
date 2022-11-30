@@ -41,10 +41,14 @@ function Main() {
     const [topTop, setToTop] = useState('toTop')
 
     useEffect(()=>{
-        const timer = setTimeout(() => {
+        const Loadtimer = setTimeout(() => {
             setAppClass('App')
             setLoader('loader no_loader')
-        }, 2500);
+        }, 0);
+
+        return ()=>{
+            clearTimeout(Loadtimer)
+        }
     },[])
     
     function handleClicl(){
@@ -541,12 +545,12 @@ function Main() {
                 <p>© 2022 nexus logistic</p>
             </div>
 
-            <div className={loader}>
+            {/* <div className={loader}>
             <svg className="loader_svg" viewBox="25 25 50 50">
                 <circle r="20" cy="50" cx="50"></circle>
             </svg>
             <img className="loader_logo" src={loaderLogo} />
-            </div>
+            </div> */}
 
         </div>
     )
