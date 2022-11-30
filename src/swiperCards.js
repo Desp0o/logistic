@@ -39,7 +39,7 @@ function SwiperCards() {
       <Swiper 
         slidesPerView={slideNumber}
         spaceBetween={30}
-        slidesPerGroup={slideNumber}
+        slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={false}
         autoplay={{
