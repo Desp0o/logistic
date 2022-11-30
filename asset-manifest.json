@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/logistic/static/css/main.ae2043c3.css",
-    "main.js": "/logistic/static/js/main.d7f36b67.js",
+    "main.css": "/logistic/static/css/main.38bdfff6.css",
+    "main.js": "/logistic/static/js/main.cea27bad.js",
     "static/media/boxes2.png": "/logistic/static/media/boxes2.7b9852c19ccdfcd37940.png",
     "static/media/boxtruck.png": "/logistic/static/media/boxtruck.0c4b5f9b2f55b1223326.png",
     "static/media/bg1.jpg": "/logistic/static/media/bg1.df4ccfe74736e69b5d1e.jpg",
     "static/media/bgMain.jfif": "/logistic/static/media/bgMain.0d657f9efe192cbca4b7.jfif",
     "static/media/Roboto-Regular.ttf": "/logistic/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
     "static/media/Poppins-Regular.ttf": "/logistic/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Ignatiev.jpg": "/logistic/static/media/Ignatiev.28696d13b67fcc75edc2.jpg",
     "static/media/blue-bg.png": "/logistic/static/media/blue-bg.a1aa9e979211935c703c.png",
     "static/media/logo.png": "/logistic/static/media/logo.18926342d53955fa8bfe.png",
     "static/media/Amazon.png": "/logistic/static/media/Amazon.9e8b75b8eb8a37103529.png",
@@ -19,11 +20,11 @@
     "index.html": "/logistic/index.html",
     "static/media/bars.svg": "/logistic/static/media/bars.32eba31ba37233ebe0bb3bb9badb7b2b.svg",
     "static/media/xmark.svg": "/logistic/static/media/xmark.6094806edfb5ce6d2fba1007c7a5acb3.svg",
-    "main.ae2043c3.css.map": "/logistic/static/css/main.ae2043c3.css.map",
-    "main.d7f36b67.js.map": "/logistic/static/js/main.d7f36b67.js.map"
+    "main.38bdfff6.css.map": "/logistic/static/css/main.38bdfff6.css.map",
+    "main.cea27bad.js.map": "/logistic/static/js/main.cea27bad.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae2043c3.css",
-    "static/js/main.d7f36b67.js"
+    "static/css/main.38bdfff6.css",
+    "static/js/main.cea27bad.js"
   ]
 }
