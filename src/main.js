@@ -179,14 +179,14 @@ function Main() {
 
                             <div className="overlap_txt2">
                                 <p>
-                                Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company. We offer following services: 
+                                Nexus Logistics LLC is a 24/7 delivery/dispatching/carrier company. We offer the following services: 
                             <b>Recovery Trucks , Best Insurance, Brand New Cars, Experienced Drivers, Live Tracking System, Load Monitoring...</b>
                                 </p>
                             </div>
 
                             <div className="overlap_txt3">
                                 <p>
-                                We deliver everything in time, our dispatchers work 24/7 to provide information anytime. We have more than 2.5+ years of experience working as carrier a company.
+                                We deliver everything on time, our dispatchers work 24/7 to provide information anytime. We have more than 2.5+ years of experience working as a carrier company.
                                 Company's priorities are our clients and brokers to feel safe while working with us.
                                 </p>
                             </div>
@@ -218,7 +218,7 @@ function Main() {
 
                             <p className="card_txt1">24/7 Delivery</p>
 
-                            <p className="card_txt2">We can deliver your product at the best price. We guarantee your delivery with the best insurance company</p>
+                            <p className="card_txt2">We can deliver your product at the best price. We guarantee your delivery with the best insurance companies</p>
                         </div>
                     </div></Fade>
 
@@ -237,7 +237,7 @@ function Main() {
 
                             <p className="card_txt1">Dispatching Service</p>
 
-                            <p className="card_txt2">The team full of dispatchers are searching for the new loads on different platforms</p>
+                            <p className="card_txt2">The team full of dispatchers are searching for the new loads on various different platforms</p>
                         </div>
                     </div></Fade>
 
@@ -356,7 +356,7 @@ function Main() {
 
                             <p className="card_txt1">24/7 Tracking System</p>
 
-                            <p className="card_txt2">Our tracking system helps to check your loads from everywhere and everytime</p>
+                            <p className="card_txt2">Our automated trucking system will help you check on your delivery status anytime</p>
                         </div>
                     </div></Fade>
                 </div>
