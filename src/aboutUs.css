@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px -2px 9px 0px #474747
 }
 
 
@@ -87,7 +86,7 @@
 .overlap_btn{
     width: 250px;
     height: 60px;
-    background-color: #FE2144;
+    background-color: rgba(2, 54, 127, 1);
     position: relative;
     cursor: pointer;
     display: flex;

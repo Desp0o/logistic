@@ -320,7 +320,7 @@ ul{
     -o-object-position: center;
     position: absolute;
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 
 .sliderIMG_active{

@@ -17,14 +17,9 @@ import SwiperCards from "./swiperCards";
 
 import clock from './images/clock.png'
 import logo  from './images/logo.png'
-import car1 from './images/car1.jpg'
 import xmark from './images/xmark.svg'
 import bars from './images/bars.svg'
-import bg2 from './images/bg2.webp'
 import bg1 from './images/bg1.jpg'
-import arrowUp from './images/arrowUp.svg'
-import mainbg from './images/bgMain.jfif'
-import boxturck from './images/boxtruck.jpg'
 
 function Main() {
     const navRef       = useRef()

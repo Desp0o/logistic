@@ -2,7 +2,7 @@ import {React, useEffect, useState} from "react";
 import './main.css'
 
 
-import mainbg from './images/bgMain.png'
+import mainbg from './images/bgMain.jfif'
 import boxturck from './images/boxtruck.png'
 
 const textArr = [
