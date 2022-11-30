@@ -142,7 +142,7 @@ function Main() {
                 </div>
             </div>
 
-            <div className={dashboard}>
+            <div className={dashboard} onClick={()=>handleClicl()}>
                     <ul>
                         <li className="navbar_links" onClick={()=> refScroll(homeRef)}>home</li>
                         <li className="navbar_links" onClick={()=> refScroll(aboutRef)}>about us</li>
