@@ -20,6 +20,7 @@ import logo  from './images/logo.png'
 import xmark from './images/xmark.svg'
 import bars from './images/bars.svg'
 import bg1 from './images/bg1.jpg'
+import loaderLogo from './images/loaderlogo.png'
 
 function Main() {
     const navRef       = useRef()
@@ -30,13 +31,21 @@ function Main() {
     const contactRef   = useRef()
 
     
-    
+    const [appClass, setAppClass] = useState('App overflow_hidden')
+    const [loader, setLoader] = useState('loader')
     const [burgerLogo, setBurgerLogo] = useState(bars)
     const [isActive, setIsActive] = useState(false)
     const [dashboard, setDashboard] = useState('dashboard')
     const [navbarClass, setNavbarClass] = useState('navbar')
     const [bgClass, setBgClass] = useState('slider')
     const [topTop, setToTop] = useState('toTop')
+
+    useEffect(()=>{
+        const timer = setTimeout(() => {
+            setAppClass('App')
+            setLoader('loader no_loader')
+        }, 2500);
+    },[])
     
     function handleClicl(){
         if(!isActive){
@@ -79,7 +88,7 @@ function Main() {
       };
 
     return(
-        <div className="App">
+        <div className={appClass}>
 
             <div className={topTop} onClick={()=>refScroll(homeRef)}>
             <svg  className="toTop_svg"  viewBox="0 0 24 24" version="1.1">
@@ -530,6 +539,13 @@ function Main() {
 
             <div className="all_rights">
                 <p>© 2022 nexus logistic</p>
+            </div>
+
+            <div className={loader}>
+            <svg className="loader_svg" viewBox="25 25 50 50">
+                <circle r="20" cy="50" cx="50"></circle>
+            </svg>
+            <img className="loader_logo" src={loaderLogo} />
             </div>
 
         </div>

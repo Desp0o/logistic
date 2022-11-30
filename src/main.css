@@ -608,3 +608,87 @@ figure.snip1390 .profile {
     width: 100%;
     overflow-x: hidden;
 }
+
+
+.loader{
+    position: absolute;
+    z-index: 18;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.no_loader{
+    display: none;
+}
+
+.loader_svg {
+    width: 6.25em;
+    transform-origin: center;
+    animation: rotate4 0.8s linear infinite;
+   }
+   
+   circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 0.8s ease-in-out infinite, circleDissapear 0.8s ease 1.3s 1 forwards;
+   }
+   
+   @keyframes rotate4 {
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes dash4 {
+    0% {
+     stroke-dasharray: 1, 200;
+     stroke-dashoffset: 0;
+    }
+   
+    50% {
+     stroke-dasharray: 90, 200;
+     stroke-dashoffset: -35px;
+    }
+   
+    100% {
+     stroke-dashoffset: -125px;
+    }
+   }
+   
+
+   .loader_logo{
+    position: absolute;
+    width: 3em;
+    opacity: 0;
+    transform: scale(0);
+    animation: logoApprove 0.5s linear 1s 1 forwards;
+   }
+
+   @keyframes logoApprove{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+   }
+
+   @keyframes circleDissapear {
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+    }
+   }
