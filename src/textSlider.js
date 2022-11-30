@@ -72,7 +72,6 @@ function TextSlider() {
             sliderimg = 'sliderIMG sliderIMG_active slider_pos'
            }
             
-            console.log(imgKey);
             return(
               <>
               <img className={sliderimg} src={text.image} key={imgKey} alt="sliderIMG"/>
