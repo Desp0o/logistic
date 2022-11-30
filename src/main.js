@@ -59,7 +59,7 @@ function Main() {
             setBgClass('slider')
           }
 
-          if (window.scrollY > 500) {
+          if (window.scrollY > 800) {
             setToTop('toTop topActive')
           }else{
             setToTop('toTop')

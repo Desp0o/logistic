@@ -7,12 +7,13 @@ import './cardSwiper.css'
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import leadboard from './images/123loadboard.png'
-import amazon from './images/Amazon.png'
-import dat from './images/dat.png'
-import sylectus from './images/sylectus.png'
-import dhl from './images/DHL.png'
-import fedex from './images/fedex.png'
+import brad from './images/brad.jpg'
+import linda from './images/linda.jpg'
+import Ignatiev from './images/Ignatiev.jpg'
+import Mariabella from './images/Mariabella.jpg'
+import caruso from './images/caruso.jpg'
+import Owens from './images/freeman.jpg'
+import garfild from './images/garfild.jpg'
 
 // import required modules
 import {Autoplay, Pagination, Navigation } from "swiper";
@@ -53,7 +54,7 @@ function SwiperCards() {
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample3.jpg" alt="profile-sample3" className="profile" />
                 <figcaption>
                     <h2>Eleanor Crisp</h2>
-                    <blockquote>Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!</blockquote>
+                    <blockquote>Great Service, they deliver as expected!</blockquote>
                 </figcaption>
             </figure>
         </SwiperSlide>
@@ -62,7 +63,7 @@ function SwiperCards() {
             <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" className="profile" />
                 <figcaption>
                     <h2>Gordon Norman</h2>
-                    <blockquote>Wormwood : Calvin, how about you? Calvin : Hard to say ma'am. I think my cerebellum has just fused. </blockquote>
+                    <blockquote>The best logistic company with a high quality service and responsible team, thank u guys for being helpful and professionals.</blockquote>
                 </figcaption>
             </figure>
         </SwiperSlide>
@@ -71,7 +72,7 @@ function SwiperCards() {
             <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample5" className="profile" />
                 <figcaption>
                     <h2>Sue Shei</h2>
-                    <blockquote>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</blockquote>
+                    <blockquote>High level professionals who provide best service!</blockquote>
                 </figcaption>
             </figure>
         </SwiperSlide>
@@ -80,7 +81,71 @@ function SwiperCards() {
             <figure className="snip1390 hover"><img src="https://www.devweb.cc/static/media/despo_img.59fe330819c9a9131b84.png" alt="profile-sample5" className="profile" />
                 <figcaption>
                     <h2>Tonrike Despotashvili</h2>
-                    <blockquote>The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference.</blockquote>
+                    <blockquote>The best Service in USA ! Recommended to everyone . You rock guys !</blockquote>
+                </figcaption>
+            </figure>
+        </SwiperSlide>
+
+        <SwiperSlide className="haha">
+            <figure className="snip1390 hover"><img src={linda} alt="profile-sample5" className="profile" />
+                <figcaption>
+                    <h2>Linda Nelson</h2>
+                    <blockquote>The best Service in USA ! Recommended to everyone . You rock guys !</blockquote>
+                </figcaption>
+            </figure>
+        </SwiperSlide>
+
+        <SwiperSlide className="haha">
+            <figure className="snip1390 hover"><img src={Ignatiev} alt="profile-sample5" className="profile" />
+                <figcaption>
+                    <h2>Adolph Ignatiev</h2>
+                    <blockquote> Your team has done a phenomenal job for us, starting from the moment I reached out to you. Logistics Plus’s level of communication and overall performance has been excellent!</blockquote>
+                </figcaption>
+            </figure>
+        </SwiperSlide>
+
+        <SwiperSlide className="haha">
+            <figure className="snip1390 hover"><img src={Mariabella} alt="profile-sample5" className="profile" />
+                <figcaption>
+                    <h2>Mariabella Wilder</h2>
+                    <blockquote>I just wanted to take a moment of your time to thank you for the spectacular service you provide!</blockquote>
+                </figcaption>
+            </figure>
+        </SwiperSlide>
+
+        <SwiperSlide className="haha">
+            <figure className="snip1390 hover"><img src={caruso} alt="profile-sample5" className="profile" />
+                <figcaption>
+                    <h2>Ronen Caruso</h2>
+                    <blockquote>his Nexus Logistics team is amazing. Professional, timely, communicative. They work seamlessly and when troubleshooting is needed, 
+                        they always find the right solution</blockquote>
+                </figcaption>
+            </figure>
+        </SwiperSlide>
+
+        <SwiperSlide className="haha">
+            <figure className="snip1390 hover"><img src={Owens} alt="profile-sample5" className="profile" />
+                <figcaption>
+                    <h2>John Owens</h2>
+                    <blockquote>Thanks to NexusLogistics for helping us deliver on our promise of prompt delivery to our customers!</blockquote>
+                </figcaption>
+            </figure>
+        </SwiperSlide>
+
+        <SwiperSlide className="haha">
+            <figure className="snip1390 hover"><img src={garfild} alt="profile-sample5" className="profile" />
+                <figcaption>
+                    <h2>Garfield Deacon</h2>
+                    <blockquote> I used this service and I was pleasantly surprised with it. </blockquote>
+                </figcaption>
+            </figure>
+        </SwiperSlide>
+
+        <SwiperSlide className="haha">
+            <figure className="snip1390 hover"><img src={brad} alt="profile-sample5" className="profile" />
+                <figcaption>
+                    <h2>Brad Baily</h2>
+                    <blockquote> With the nexus logistic solution, we've been able to meet our needs and more. We're very happy with the solution.</blockquote>
                 </figcaption>
             </figure>
         </SwiperSlide>
