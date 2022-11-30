@@ -528,6 +528,10 @@ function Main() {
                 </div>
             </div>
 
+            <div className="all_rights">
+                <p>© 2022 nexus logistic</p>
+            </div>
+
         </div>
     )
 }

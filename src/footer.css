@@ -42,6 +42,7 @@
 
 .footer_social_inner{
     font-family: roboto;
+    text-transform: uppercase;
     font-size: 18px;
     font-weight: 900;
     overflow: hidden;
@@ -66,3 +67,30 @@
     gap: 20px;
 }
 
+.all_rights{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.all_rights p{
+    font-family: roboto;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #0D2D3E;
+}
+
+@media (max-width:769px) {
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer_block{
+        align-items: flex-start;
+    }
+
+}
