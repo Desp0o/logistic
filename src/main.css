@@ -400,7 +400,7 @@ ul{
 .slider_btn{
     width: 200px;
     height: 60px;
-    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
+    background-color: rgba(2, 54, 127, 1);
     position: relative;
     cursor: pointer;
     display: flex;
