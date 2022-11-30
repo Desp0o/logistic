@@ -98,7 +98,7 @@ function SwiperCards() {
         <SwiperSlide className="haha">
             <figure className="snip1390 hover"><img src={Ignatiev} alt="profile-sample5" className="profile" />
                 <figcaption>
-                    <h2>Adolph Ignatiev</h2>
+                    <h2>Joseph Ignatiev</h2>
                     <blockquote> Your team has done a phenomenal job for us, starting from the moment I reached out to you. Logistics Plus’s level of communication and overall performance has been excellent!</blockquote>
                 </figcaption>
             </figure>
