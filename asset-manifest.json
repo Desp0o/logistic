@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/logistic/static/css/main.4305e0ab.css",
-    "main.js": "/logistic/static/js/main.b61c7a0f.js",
+    "main.css": "/logistic/static/css/main.35b9e0a4.css",
+    "main.js": "/logistic/static/js/main.99fa9e64.js",
     "static/media/boxes2.png": "/logistic/static/media/boxes2.7b9852c19ccdfcd37940.png",
     "static/media/boxtruck.png": "/logistic/static/media/boxtruck.0c4b5f9b2f55b1223326.png",
     "static/media/bg1.jpg": "/logistic/static/media/bg1.df4ccfe74736e69b5d1e.jpg",
@@ -21,11 +21,11 @@
     "index.html": "/logistic/index.html",
     "static/media/bars.svg": "/logistic/static/media/bars.32eba31ba37233ebe0bb3bb9badb7b2b.svg",
     "static/media/xmark.svg": "/logistic/static/media/xmark.6094806edfb5ce6d2fba1007c7a5acb3.svg",
-    "main.4305e0ab.css.map": "/logistic/static/css/main.4305e0ab.css.map",
-    "main.b61c7a0f.js.map": "/logistic/static/js/main.b61c7a0f.js.map"
+    "main.35b9e0a4.css.map": "/logistic/static/css/main.35b9e0a4.css.map",
+    "main.99fa9e64.js.map": "/logistic/static/js/main.99fa9e64.js.map"
   },
   "entrypoints": [
-    "static/css/main.4305e0ab.css",
-    "static/js/main.b61c7a0f.js"
+    "static/css/main.35b9e0a4.css",
+    "static/js/main.99fa9e64.js"
   ]
 }
