@@ -2,6 +2,7 @@
 *{
   margin: 0;
   padding: 0;
+  
 }
 
 .App{
@@ -13,3 +14,6 @@
 .overflow_hidden{
   overflow-y: hidden;
 }
+
+
+
