@@ -60,7 +60,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Gordon Norman</h2>
                     <blockquote>The best logistic company with a high quality service and responsible team, thank u guys for being helpful and professionals.</blockquote>
@@ -69,7 +69,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample6.jpg" alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Sue Shei</h2>
                     <blockquote>High level professionals who provide best service!</blockquote>
@@ -78,7 +78,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src={linda} alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src={linda} alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Linda Nelson</h2>
                     <blockquote>The best Service in USA ! Recommended to everyone . You rock guys !</blockquote>
@@ -87,7 +87,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src={Ignatiev} alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src={Ignatiev} alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Joseph Ignatiev</h2>
                     <blockquote> Your team has done a phenomenal job for us, starting from the moment I reached out to you. Logistics Plus’s level of communication and overall performance has been excellent!</blockquote>
@@ -96,7 +96,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src={Mariabella} alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src={Mariabella} alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Mariabella Wilder</h2>
                     <blockquote>I just wanted to take a moment of your time to thank you for the spectacular service you provide!</blockquote>
@@ -105,7 +105,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src={caruso} alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src={caruso} alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Ronen Caruso</h2>
                     <blockquote>his Nexus Logistics team is amazing. Professional, timely, communicative. They work seamlessly and when troubleshooting is needed, 
@@ -115,7 +115,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src={Owens} alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src={Owens} alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>John Owens</h2>
                     <blockquote>Thanks to NexusLogistics for helping us deliver on our promise of prompt delivery to our customers!</blockquote>
@@ -124,7 +124,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src={garfild} alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src={garfild} alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Garfield Deacon</h2>
                     <blockquote> I used this service and I was pleasantly surprised with it. </blockquote>
@@ -133,7 +133,7 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src={brad} alt="profile-sample5" className="profile" />
+            <figure className="snip1390 hover"><img src={brad} alt="team of nexus customer" className="profile" />
                 <figcaption>
                     <h2>Brad Baily</h2>
                     <blockquote> With the nexus logistic solution, we've been able to meet our needs and more. We're very happy with the solution.</blockquote>

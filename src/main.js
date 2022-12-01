@@ -11,7 +11,6 @@ import './aboutUs.css'
 import './services.css'
 import './footer.css'
 
-import TextSlider from "./textSlider";
 import SwiperSlider from "./swiper";
 import SwiperCards from "./swiperCards"; 
 
@@ -22,7 +21,6 @@ import bars from './images/bars.svg'
 import bg1 from './images/bg1.jpg'
 import mainbg from './images/bgMain.jfif'
 import boxturck from './images/boxtruck.png'
-import loaderLogo from './images/loaderlogo.png'
 
 const textArr = [
     {
@@ -153,7 +151,7 @@ function Main() {
             {/* ზედა ფიქსირებული სექცია */}
             <div className="top_section" ref={homeRef}>
                 <div className="top_section_left">
-                    <img className="top_section_left_icon" src={clock} alt="icon"/>
+                    <img className="top_section_left_icon" src={clock} alt="nexus logistic icon"/>
                     <p className="top_section_left_txt">MON - SUN: 24 HOURS</p>
                 </div>
 
@@ -169,8 +167,8 @@ function Main() {
             {/* ნავიგაცია */}
             <div className={navbarClass} ref={navRef}>
                 <div className="navbar_left">
-                    <img className="navbar_logo" src={logo} alt="company_logo" onClick={()=> refScroll(homeRef)}/>
-                    <p onClick={()=> refScroll(homeRef)}>Nexus Logistics LLC</p>
+                    <img className="navbar_logo" src={logo} alt="teamofnexus logo" onClick={()=> refScroll(homeRef)}/>
+                    <h3 onClick={()=> refScroll(homeRef)}>Nexus Logistics LLC</h3>
                 </div>
 
                 <div className="navbar_right">
@@ -184,7 +182,7 @@ function Main() {
                 </div>
 
                 <div className="burger_menu" onClick={handleClicl}>
-                    <img className="burger_menu_icon" src={burgerLogo} alt="burger_menu_icon" />
+                    <img className="burger_menu_icon" src={burgerLogo} alt="teamofnexus" />
                 </div>
             </div>
 
@@ -224,7 +222,7 @@ function Main() {
                         }
                             return(
                             <>
-                            <img className={sliderimg} src={text.image} key={imgKey} alt="sliderIMG"/>
+                            <img className={sliderimg} src={text.image} key={imgKey} alt="teamofnexus"/>
                                 <div className={textDiv} key={text.id}>
                                     {/* ხაზი და ტექსტი */}
                                     <div className={text1}>
@@ -234,8 +232,8 @@ function Main() {
 
                                     {/*დიდი სათაური*/}
                                     <div className="slider_headers">
-                                        <p className={text2}>{text.header1}</p>
-                                        <p className={text3}>{text.header2}</p>
+                                        <h1 className={text2}>{text.header1}</h1>
+                                        <h1 className={text3}>{text.header2}</h1>
                                     </div>
 
 
@@ -257,7 +255,7 @@ function Main() {
                 <div className="what_we_do_overlap">
 
                     <div className="what_we_do_overlap_left">
-                        <img src={bg1} alt="car"/>
+                        <img src={bg1} alt="teamofnexus car"/>
                     </div>
 
                     <div className="what_we_do_overlap_right">
@@ -267,7 +265,7 @@ function Main() {
                             </div>
 
                             <div className="overlap_txt1">
-                                <p>What we do?</p>
+                                <h1>What we do?</h1>
                             </div>
 
                             <div className="overlap_txt2">
@@ -302,7 +300,7 @@ function Main() {
                         <p>WHAT WE DO?</p>
                     </div>
 
-                    <p className="service_big_header">Our Services</p>
+                    <h2 className="service_big_header">Our Services</h2>
                     </div>
 
                 <div className="service_cards_section">
@@ -462,8 +460,8 @@ function Main() {
             {/* სერჩინგი */}
             <div className="searching">
                 <div className="searching_headers">
-                    <p>Are you Searching</p>
-                    <p>For a Delivery/Dispatching service?</p>
+                    <h2>Are you Searching</h2>
+                    <h2>For a Delivery/Dispatching service?</h2>
                 </div>
 
                 <div className="search_btn" onClick={()=> refScroll(contactRef)}>
@@ -629,7 +627,7 @@ function Main() {
 
                         <div className="footer_block">
                             <p className="block_header">Email:</p>
-                            <p>Logisticshrnexus@gmail.com</p>
+                            <p className="footer_email">Logisticshrnexus@gmail.com</p>
                         </div>
 
                         <div className="footer_block">

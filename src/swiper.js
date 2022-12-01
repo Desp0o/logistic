@@ -51,13 +51,13 @@ function SwiperSlider() {
           }}
         modules={[Autoplay,Pagination, Navigation]}
         className="mySwiper">
-        <SwiperSlide><img src={amazon}/></SwiperSlide>
-        <SwiperSlide><img src={dat}/></SwiperSlide>
-        <SwiperSlide><img src={sylectus}/></SwiperSlide>
-        <SwiperSlide><img src={leadboard}/></SwiperSlide>
-        <SwiperSlide><img src={dhl}/></SwiperSlide>
-        <SwiperSlide><img src={leadboard}/></SwiperSlide>
-        <SwiperSlide><img src={fedex}/></SwiperSlide>
+        <SwiperSlide><img src={amazon} alt="teamofnexus company slider"/></SwiperSlide>
+        <SwiperSlide><img src={dat} alt="teamofnexus company slider"/></SwiperSlide>
+        <SwiperSlide><img src={sylectus} alt="teamofnexus company slider"/></SwiperSlide>
+        <SwiperSlide><img src={leadboard} alt="teamofnexus company slider"/></SwiperSlide>
+        <SwiperSlide><img src={dhl} alt="teamofnexus company slider"/></SwiperSlide>
+        <SwiperSlide><img src={leadboard} alt="teamofnexus company slider"/></SwiperSlide>
+        <SwiperSlide><img src={fedex} alt="teamofnexus company slider"/></SwiperSlide>
       </Swiper>
     </>
   );
