@@ -34,6 +34,8 @@
 }
 
 .what_we_do_overlap_right{
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 55%;
     box-sizing: border-box;
     padding-left: 100px;
