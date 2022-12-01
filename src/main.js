@@ -20,7 +20,29 @@ import logo  from './images/logo.png'
 import xmark from './images/xmark.svg'
 import bars from './images/bars.svg'
 import bg1 from './images/bg1.jpg'
+import mainbg from './images/bgMain.jfif'
+import boxturck from './images/boxtruck.png'
 import loaderLogo from './images/loaderlogo.png'
+
+const textArr = [
+    {
+       id:1,
+       image: `${mainbg}`,
+       key: 'a',
+       smallText:'we delivery faster',
+       header1: 'we help to',
+       header2: 'deliver your load'
+    },
+  
+    {
+        id:2,
+        key: 'a1',
+        image: `${boxturck}`,
+        smallText:'we search loads for you',
+        header1: 'we help to grow',
+        header2: 'your bussines'
+    }
+  ]
 
 function Main() {
     const navRef       = useRef()
@@ -91,6 +113,26 @@ function Main() {
         refname.current?.scrollIntoView({behavior: 'smooth'});
       };
 
+    //   სლაიდერის ფუნქციონალი
+    const [index, setIndex] = useState(0)
+    const slideLength = textArr.length 
+
+    useEffect(()=>{
+    
+        const textTimer = setInterval(()=>{
+          if(index === slideLength-1){
+            setIndex(0)
+          }else{
+            setIndex(index+1)
+          }
+          
+        },7000)
+  
+        return ()=>{
+          clearInterval(textTimer)
+        }
+       },[index])
+
     return(
         <div className={appClass}>
 
@@ -106,6 +148,8 @@ function Main() {
             </svg>
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/* ზედა ფიქსირებული სექცია */}
             <div className="top_section" ref={homeRef}>
                 <div className="top_section_left">
@@ -119,7 +163,9 @@ function Main() {
                     <p className="top_section_right_txt">+1 (213) 785-7673</p>
                 </div>
             </div>
-
+             
+            
+            {/* ****************************************************************************** */}
             {/* ნავიგაცია */}
             <div className={navbarClass} ref={navRef}>
                 <div className="navbar_left">
@@ -152,13 +198,60 @@ function Main() {
                     </ul>
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/* სლაიდერი */}
             <div className={bgClass}>
-                {/* <img className="sliderIMG" src={boxturck} alt="sliderIMG"/> */}
+                {textArr.map((text, slideIndex, imgKey)=>{
 
-                <TextSlider />
+                    let textDiv = 'textslider'
+                    let text1 = 'line_smallH'
+                    let text2 = 'header1'
+                    let text3 = 'header2'
+                    let sliderBtn = 'slider_btn'
+                    let sliderimg = 'sliderIMG'
+
+                        {index === slideIndex  ? textDiv = 'textslider actived' : textDiv = 'textslider'}
+                        {index === slideIndex  ? text1 = 'line_smallH animation1' : text1 = 'line_smallH'}
+                        {index === slideIndex  ? text2 = 'header1 animation2' : text2 = 'header1'}
+                        {index === slideIndex  ? text3 = 'header2 animation3' : text3 = 'header2'}
+                        {index === slideIndex  ? sliderBtn = 'slider_btn animation4' : sliderBtn = 'slider_btn'}
+                        {index === slideIndex  ? sliderimg = 'sliderIMG sliderIMG_active' : sliderBtn = 'sliderIMG'}
+
+
+                        if(index===1){
+                        sliderimg = 'sliderIMG sliderIMG_active slider_pos'
+                        }
+                            return(
+                            <>
+                            <img className={sliderimg} src={text.image} key={imgKey} alt="sliderIMG"/>
+                                <div className={textDiv} key={text.id}>
+                                    {/* ხაზი და ტექსტი */}
+                                    <div className={text1}>
+                                        <div className="slider_line"></div>
+                                        <p className="slider_small_text">{text.smallText}</p>
+                                    </div>
+
+                                    {/*დიდი სათაური*/}
+                                    <div className="slider_headers">
+                                        <p className={text2}>{text.header1}</p>
+                                        <p className={text3}>{text.header2}</p>
+                                    </div>
+
+
+                                    <div className={sliderBtn} onClick={()=> refScroll(serviceRef)}>
+                                        <p>our service</p>
+                                    </div>
+                                </div>
+                                </>
+                            )
+
+
+                            })}
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/* about სექცია */}
             <div className="what_we_do" ref={aboutRef}>
                 <div className="what_we_do_overlap">
@@ -191,7 +284,7 @@ function Main() {
                                 </p>
                             </div>
 
-                            <div className="overlap_btn">
+                            <div className="overlap_btn" onClick={()=> refScroll(customersRef)}>
                                 <p>happy customers</p>
                             </div>
                     </div>
@@ -199,6 +292,8 @@ function Main() {
 
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/* სერვისები */}
             <div className="services" ref={serviceRef}>
                 <div className="service_textes">
@@ -361,7 +456,9 @@ function Main() {
                     </div></Fade>
                 </div>
             </div>
+            
 
+            {/* ****************************************************************************** */}
             {/* სერჩინგი */}
             <div className="searching">
                 <div className="searching_headers">
@@ -369,11 +466,13 @@ function Main() {
                     <p>For a Delivery/Dispatching service?</p>
                 </div>
 
-                <div className="search_btn">
+                <div className="search_btn" onClick={()=> refScroll(contactRef)}>
                     <p>Contact Us</p>
                 </div>
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/*ციფრების თვლა*/}
             <div className="counting_numbers">
 
@@ -438,6 +537,8 @@ function Main() {
                 </div></Fade>
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/*ციფრების თვლა რესპონსივი*/}
             <div className="counting_numbers_responsive">
 
@@ -502,16 +603,22 @@ function Main() {
                 </div></Fade>
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/* compnay swiper */}
             <div className="compnay_swiper">
                 <SwiperSlider />
             </div>
 
+
+            {/* ****************************************************************************** */}
             {/* რევიუს დივი */}
             <div className="slider2" ref={customersRef}>
             <SwiperCards />
             </div>
             
+
+            {/* ****************************************************************************** */}
             {/* ფუტერი */}
             <div className="footer" ref={contactRef}>
                 <div className="footer_inner">
