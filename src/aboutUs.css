@@ -6,6 +6,7 @@
     background-position: center center !important;;
     position: relative;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,11 +19,13 @@
     padding-bottom: 50px;
     position: relative;
     width: 90%;
+    height: 80%;
     display: flex;
 }
 
 .what_we_do_overlap_left{
     width: 45%;
+    height: 100%;
     box-sizing: border-box;
 }
 
@@ -34,15 +37,13 @@
 }
 
 .what_we_do_overlap_right{
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 55%;
+    height: 100%;
     box-sizing: border-box;
     padding-left: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 30px;
 }
 .overlap_header{
     color: white;
@@ -183,7 +184,7 @@
         width: 100%;
         padding: 0;
         gap: 20px;
-        justify-content: unset;
+        justify-content: space-between;
     }
 
     .overlap_header{
