@@ -50,9 +50,6 @@ function Main() {
     const customersRef = useRef()
     const contactRef   = useRef()
 
-    
-    const [appClass, setAppClass] = useState('App overflow_hidden')
-    const [loader, setLoader] = useState('loader')
     const [burgerLogo, setBurgerLogo] = useState(bars)
     const [isActive, setIsActive] = useState(false)
     const [dashboard, setDashboard] = useState('dashboard')
@@ -60,16 +57,7 @@ function Main() {
     const [bgClass, setBgClass] = useState('slider')
     const [topTop, setToTop] = useState('toTop')
 
-    useEffect(()=>{
-        const Loadtimer = setTimeout(() => {
-            setAppClass('App')
-            setLoader('loader no_loader')
-        }, 0);
-
-        return ()=>{
-            clearTimeout(Loadtimer)
-        }
-    },[])
+   
     
     function handleClicl(){
         if(!isActive){
@@ -132,7 +120,7 @@ function Main() {
        },[index])
 
     return(
-        <div className={appClass}>
+        <div className='App'>
 
             <div className={topTop} onClick={()=>refScroll(homeRef)}>
             <svg  className="toTop_svg"  viewBox="0 0 24 24" version="1.1">
@@ -209,12 +197,12 @@ function Main() {
                     let sliderBtn = 'slider_btn'
                     let sliderimg = 'sliderIMG'
 
-                        {index === slideIndex  ? textDiv = 'textslider actived' : textDiv = 'textslider'}
-                        {index === slideIndex  ? text1 = 'line_smallH animation1' : text1 = 'line_smallH'}
-                        {index === slideIndex  ? text2 = 'header1 animation2' : text2 = 'header1'}
-                        {index === slideIndex  ? text3 = 'header2 animation3' : text3 = 'header2'}
-                        {index === slideIndex  ? sliderBtn = 'slider_btn animation4' : sliderBtn = 'slider_btn'}
-                        {index === slideIndex  ? sliderimg = 'sliderIMG sliderIMG_active' : sliderBtn = 'sliderIMG'}
+                        index === slideIndex  ? textDiv = 'textslider actived' : textDiv = 'textslider'
+                        index === slideIndex  ? text1 = 'line_smallH animation1' : text1 = 'line_smallH'
+                        index === slideIndex  ? text2 = 'header1 animation2' : text2 = 'header1'
+                        index === slideIndex  ? text3 = 'header2 animation3' : text3 = 'header2'
+                        index === slideIndex  ? sliderBtn = 'slider_btn animation4' : sliderBtn = 'slider_btn'
+                        index === slideIndex  ? sliderimg = 'sliderIMG sliderIMG_active' : sliderBtn = 'sliderIMG'
 
 
                         if(index===1){
