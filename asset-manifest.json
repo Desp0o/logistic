@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/logistic/static/css/main.0c16c8e6.css",
+    "main.css": "/logistic/static/css/main.1d53ea92.css",
     "main.js": "/logistic/static/js/main.e07c47f3.js",
     "static/media/boxes2.png": "/logistic/static/media/boxes2.7b9852c19ccdfcd37940.png",
     "static/media/boxtruck.png": "/logistic/static/media/boxtruck.0c4b5f9b2f55b1223326.png",
@@ -21,11 +21,11 @@
     "index.html": "/logistic/index.html",
     "static/media/bars.svg": "/logistic/static/media/bars.32eba31ba37233ebe0bb3bb9badb7b2b.svg",
     "static/media/xmark.svg": "/logistic/static/media/xmark.6094806edfb5ce6d2fba1007c7a5acb3.svg",
-    "main.0c16c8e6.css.map": "/logistic/static/css/main.0c16c8e6.css.map",
+    "main.1d53ea92.css.map": "/logistic/static/css/main.1d53ea92.css.map",
     "main.e07c47f3.js.map": "/logistic/static/js/main.e07c47f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c16c8e6.css",
+    "static/css/main.1d53ea92.css",
     "static/js/main.e07c47f3.js"
   ]
 }
