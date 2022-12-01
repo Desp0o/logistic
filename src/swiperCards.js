@@ -78,15 +78,6 @@ function SwiperCards() {
         </SwiperSlide>
 
         <SwiperSlide className="haha">
-            <figure className="snip1390 hover"><img src="https://www.devweb.cc/static/media/despo_img.59fe330819c9a9131b84.png" alt="profile-sample5" className="profile" />
-                <figcaption>
-                    <h2>Tonrike Despotashvili</h2>
-                    <blockquote>The best Service in USA ! Recommended to everyone . You rock guys !</blockquote>
-                </figcaption>
-            </figure>
-        </SwiperSlide>
-
-        <SwiperSlide className="haha">
             <figure className="snip1390 hover"><img src={linda} alt="profile-sample5" className="profile" />
                 <figcaption>
                     <h2>Linda Nelson</h2>
