@@ -637,6 +637,7 @@ function Main() {
             <div className="all_rights">
                 <p>© 2022 nexus logistic</p>
             </div>
+            {/* <p className="author" onClick={()=>socialLink('https://www.linkedin.com/in/tornike-despotashvili-250150219/')}>Build By Despo</p> */}
 
             {/* <div className={loader}>
             <svg className="loader_svg" viewBox="25 25 50 50">
