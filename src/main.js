@@ -21,6 +21,8 @@ import bars from './images/bars.svg'
 import bg1 from './images/bg1.jpg'
 import mainbg from './images/bgMain.jfif'
 import boxturck from './images/boxtruck.png'
+import user from './images/user.png'
+import userDark from './images/userDark.png'
 
 const textArr = [
     {
@@ -139,8 +141,8 @@ function Main() {
             {/* ზედა ფიქსირებული სექცია */}
             <div className="top_section" ref={homeRef}>
                 <div className="top_section_left">
-                    <img className="top_section_left_icon" src={clock} alt="nexus logistic icon"/>
-                    <p className="top_section_left_txt">MON - SUN: 24 HOURS</p>
+                    <img className="top_section_left_icon" src={user} alt="nexus logistic icon" onClick={()=>socialLink('https://track.home.pvt.ge/login')}/>
+                    <p className="top_section_left_txt" onClick={()=>socialLink('https://track.home.pvt.ge/login')}>LOG IN</p>
                 </div>
 
                 <div className="top_section_right">
@@ -181,6 +183,10 @@ function Main() {
                         <li className="navbar_links" onClick={()=> refScroll(serviceRef)}>service</li>
                         <li className="navbar_links" onClick={()=> refScroll(customersRef)}>customers</li>
                         <li className="navbar_links" onClick={()=> refScroll(contactRef)}>contact</li>
+                        <li className="navbar_links log_in" onClick={()=> refScroll('https://www.facebook.com/profile.php?id=100087955494800')}>
+                            <img className="dashboard_user_icon" src={userDark} alt="nexus logistic icon" onClick={()=>socialLink('https://track.home.pvt.ge/login')}/>
+                            <p className="top_section_left_txt" onClick={()=>socialLink('https://track.home.pvt.ge/login')}>LOG IN</p>
+                        </li>
                     </ul>
             </div>
 

@@ -90,12 +90,16 @@
 
 .top_section_left_icon{
     width: 15px;
+    cursor: pointer;
 }
 
 .top_section_left_txt{
     font-size: 12px;
     color: white;
+    cursor: pointer;
 }
+
+
 
 .top_section_right_txt{
     font-size: 16px;
@@ -692,3 +696,23 @@ figure.snip1390 .profile {
         opacity: 0;
     }
    }
+
+
+   .log_in{
+    margin-top: 20px;
+    width: 100%;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: flex-end;
+    gap: 10px;
+    font-family: roboto;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(2,54,127,1) 0%, rgb(15, 95, 124) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dashboard_user_icon{
+    width: 15px;
+}
