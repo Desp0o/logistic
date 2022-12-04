@@ -141,7 +141,9 @@ function Main() {
             {/* ზედა ფიქსირებული სექცია */}
             <div className="top_section" ref={homeRef}>
                 <div className="top_section_left">
-                    <img className="top_section_left_icon" src={user} alt="nexus logistic icon" onClick={()=>socialLink('https://track.home.pvt.ge/login')}/>
+                    <div className="user_icon_pad">
+                        <img className="top_section_left_icon" src={user} alt="nexus logistic icon" onClick={()=>socialLink('https://track.home.pvt.ge/login')}/>
+                    </div>
                     <p className="top_section_left_txt" onClick={()=>socialLink('https://track.home.pvt.ge/login')}>LOG IN</p>
                 </div>
 
