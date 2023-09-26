@@ -1,0 +1,22 @@
+
+
+
+.card_Swiper{
+    width: 100%;
+    padding: 0 !important;
+    background-image: url('../../images/boxes2.webp');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 70% 80%;
+}
+
+
+.haha{
+    height: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
